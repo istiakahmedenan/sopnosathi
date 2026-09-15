@@ -1,0 +1,3197 @@
+<!DOCTYPE html>
+<html lang="bn" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <script>
+    // Safeguard window.fetch to ensure it has a setter.
+    // In certain iframe/browser environments, window.fetch only has a getter,
+    // which throws "Cannot set property fetch of #<Window> which has only a getter"
+    // when tools or platform scripts attempt to intercept or wrap fetch.
+    (function () {
+      function makeSettable(target, key) {
+        if (!target) return;
+        try {
+          var desc = Object.getOwnPropertyDescriptor(target, key);
+          if (desc && desc.set) return;
+          var _original = target[key];
+          Object.defineProperty(target, key, {
+            get: function () {
+              return this === target ? _original : (this._customFetch !== undefined ? this._customFetch : _original);
+            },
+            set: function (fn) {
+              if (this === target) {
+                _original = fn;
+              } else {
+                this._customFetch = fn;
+              }
+            },
+            configurable: true,
+            enumerable: desc ? desc.enumerable : true,
+          });
+        } catch (err) {}
+      }
+
+      try {
+        if (typeof Window !== 'undefined' && Window.prototype) {
+          makeSettable(Window.prototype, 'fetch');
+        }
+        if (typeof window !== 'undefined') {
+          makeSettable(window, 'fetch');
+        }
+        if (typeof globalThis !== 'undefined' && globalThis !== window) {
+          makeSettable(globalThis, 'fetch');
+        }
+      } catch (e) {}
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  
+  <!-- SEO & Social Meta Tags -->
+  <title>স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র | শেরপুর</title>
+  <meta name="description" content="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র—মাদকাসক্তি থেকে স্থায়ী মুক্তির লক্ষ্যে বিজ্ঞানসম্মত চিকিৎসা, কাউন্সেলিং ও মানবিক পরিচর্যা। রেজিঃ নং- শেরপুর-০৪" />
+  <meta name="keywords" content="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র, মাদকাসক্তি নিরাময় কেন্দ্র শেরপুর, মাদকাসক্তি নিরাময় কেন্দ্র বাংলাদেশ, নেশামুক্তি কেন্দ্র শেরপুর, মাদক নিরাময় কেন্দ্র, ড্রাগ রিহ্যাব শেরপুর, আমির আবু সুফিয়ান মনি, শেরপুর মাদকাসক্তি চিকিৎসা, কাউন্সেলিং শেরপুর, মাদকাসক্তি চিকিৎসা কেন্দ্র, নেশা মুক্তি চিকিৎসা, ব্যক্তিগত কাউন্সেলিং, পারিবারিক কাউন্সেলিং, রিল্যাপ্স প্রতিরোধ, মাদক প্রত্যাহার চিকিৎসা, ডিটক্সিফিকেশন সেন্টার, মাদকাসক্ত রোগীর চিকিৎসা, আবাসিক পুনর্বাসন কেন্দ্র, সাইকোলজিক্যাল কাউন্সেলিং শেরপুর, মাদকমুক্ত জীবন, নেশা থেকে মুক্তি, ময়মনসিংহ বিভাগ মাদকাসক্তি নিরাময় কেন্দ্র" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <meta name="author" content="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র" />
+  <meta name="theme-color" content="#15803d" />
+  <meta name="geo.region" content="BD" />
+  <meta name="geo.placename" content="শেরপুর, বাংলাদেশ" />
+  <link rel="canonical" href="https://www.sopnosathi.online/" />
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.sopnosathi.online/" />
+  <meta property="og:title" content="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র | শেরপুর" />
+  <meta property="og:description" content="মাদকাসক্তি থেকে স্থায়ী মুক্তির লক্ষ্যে বিজ্ঞানসম্মত চিকিৎসা, মানবিক পরিচর্যা ও সুশৃঙ্খল সেবা।" />
+  <meta property="og:image" content="https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র | শেরপুর" />
+  <meta name="twitter:description" content="মাদকাসক্তি থেকে স্থায়ী মুক্তির লক্ষ্যে বিজ্ঞানসম্মত চিকিৎসা, মানবিক পরিচর্যা ও সুশৃঙ্খল সেবা।" />
+  <meta name="twitter:image" content="https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png" />
+
+  <link rel="icon" type="image/png" href="https://i.ibb.co.com/ZzMfxNdf/1-BB222-BC-D5-EE-4-D55-B548-45-F556-D2-E60-B.png" />
+
+  <!-- Google Fonts: Hind Siliguri (Bengali), Noto Serif Bengali & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Preconnect to image CDN so photos start downloading sooner -->
+  <link rel="preconnect" href="https://i.ibb.co.com" crossorigin />
+  <link rel="dns-prefetch" href="https://i.ibb.co.com" />
+  <!-- Preload the hero/LCP image for faster first paint -->
+  <link rel="preload" as="image" href="https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png" fetchpriority="high" />
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Noto+Serif+Bengali:wght@600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS via CDN with full config -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Hind Siliguri"', '"Plus Jakarta Sans"', 'sans-serif'],
+            serifBn: ['"Noto Serif Bengali"', 'serif'],
+          },
+          colors: {
+            brand: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              200: '#bbf7d0',
+              300: '#86efac',
+              400: '#4ade80',
+              500: '#16a34a',
+              600: '#15803d',
+              700: '#166534',
+              800: '#14532d',
+              900: '#0f3f22',
+              950: '#052e16',
+            },
+            warmgold: {
+              50: '#fffbeb',
+              100: '#fef3c7',
+              500: '#f59e0b',
+              600: '#d97706',
+              700: '#b45309',
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Global Bengali Typography & Foundation */
+    :root {
+      --brand-dark: #064e3b;
+      --brand-primary: #15803d;
+      --brand-accent: #047857;
+      --bg-warm: #f6faf7;
+    }
+
+    body {
+      font-family: 'Hind Siliguri', 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--bg-warm);
+      color: #1e293b;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Bengali line-height balance */
+    p, li, span, button, a, h1, h2, h3, h4, input, textarea {
+      line-height: 1.7;
+    }
+
+    /* Professional organic patterned background with soothing clinical warmth */
+    .bg-texture-warm {
+      background-color: #f7faf7;
+      background-image: 
+        radial-gradient(#15803d14 1.2px, transparent 1.2px), 
+        radial-gradient(#0478570a 1.2px, #f7faf7 1.2px);
+      background-size: 32px 32px;
+      background-position: 0 0, 16px 16px;
+    }
+
+    /* Hero Mesh with Radiant Ambient Lighting */
+    .hero-mesh-bg {
+      background: 
+        radial-gradient(circle at 12% 18%, rgba(187, 247, 208, 0.55) 0%, transparent 45%),
+        radial-gradient(circle at 88% 22%, rgba(254, 243, 199, 0.45) 0%, transparent 40%),
+        radial-gradient(circle at 50% 88%, rgba(209, 250, 229, 0.6) 0%, transparent 50%),
+        linear-gradient(180deg, #f8fbf9 0%, #f1f8f3 100%);
+    }
+
+    /* Atmospheric Section Backgrounds */
+    .section-mesh-sage {
+      background: 
+        radial-gradient(circle at 85% 15%, rgba(187, 247, 208, 0.35) 0%, transparent 40%),
+        radial-gradient(circle at 15% 85%, rgba(209, 250, 229, 0.35) 0%, transparent 40%),
+        #f4f9f5;
+    }
+
+    .section-mesh-pure {
+      background: 
+        radial-gradient(circle at 50% 0%, rgba(220, 252, 231, 0.3) 0%, transparent 50%),
+        #ffffff;
+    }
+
+    /* Glassmorphic Luxury Cards */
+    .glass-card-refined {
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(220, 252, 231, 0.9);
+      box-shadow: 0 10px 30px -10px rgba(15, 63, 34, 0.05);
+    }
+
+    .glass-card-refined:hover {
+      box-shadow: 0 20px 35px -10px rgba(15, 63, 34, 0.12);
+      border-color: #86efac;
+    }
+
+    /* Ambient Glow Blobs */
+    .ambient-glow {
+      position: absolute;
+      border-radius: 9999px;
+      filter: blur(60px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.6;
+    }
+
+    /* Mobile sticky bottom cushion */
+    @media (max-width: 768px) {
+      body {
+        padding-bottom: 76px;
+      }
+    }
+
+    /* Number Badges (ক্রমিক সংখ্যা) High Contrast Metallic Emerald Sheen */
+    .serial-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 14px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #ffffff;
+      background: linear-gradient(135deg, #16a34a 0%, #15803d 50%, #065f46 100%);
+      box-shadow: 0 6px 16px rgba(21, 128, 61, 0.28);
+      border: 2px solid #bbf7d0;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .serial-badge::after {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: linear-gradient(45deg, transparent 40%, rgba(255,255,255,0.25) 50%, transparent 60%);
+      transform: rotate(30deg);
+    }
+
+    /* Smooth Scroll-Triggered Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Subtle Floating Keyframe Animation */
+    @keyframes subtleFloat {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    .floating-card {
+      animation: subtleFloat 6s ease-in-out infinite;
+    }
+
+    /* Pulsing Badge Effect */
+    @keyframes pulseRing {
+      0% { transform: scale(0.96); opacity: 0.9; }
+      50% { transform: scale(1.06); opacity: 0.45; }
+      100% { transform: scale(0.96); opacity: 0.9; }
+    }
+    .pulse-badge {
+      animation: pulseRing 2.8s ease-in-out infinite;
+    }
+
+    /* Shimmer Effect for Badges */
+    @keyframes subtleShimmer {
+      0% { background-position: -200% 0; }
+      100% { background-position: 200% 0; }
+    }
+    .shimmer-badge {
+      background: linear-gradient(90deg, rgba(220,252,231,0.8) 0%, rgba(254,243,199,0.9) 50%, rgba(220,252,231,0.8) 100%);
+      background-size: 200% 100%;
+      animation: subtleShimmer 5s infinite;
+    }
+
+    /* Accordion Expand/Collapse */
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease;
+      opacity: 0;
+    }
+    .faq-answer.open {
+      max-height: 450px;
+      opacity: 1;
+    }
+    .faq-chevron {
+      transition: transform 0.3s ease;
+    }
+    .faq-chevron.open {
+      transform: rotate(180deg);
+    }
+
+    /* Lightbox Modal Transitions */
+    #galleryLightbox {
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    #galleryLightbox.hidden-modal {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+    #galleryLightbox.active-modal {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+    }
+
+    /* Hover card micro-interactions */
+    .service-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 32px -10px rgba(15, 63, 34, 0.14);
+      border-color: #4ade80;
+    }
+
+    /* Floating Quick Action Button */
+    .floating-quick-btn {
+      position: fixed;
+      bottom: 84px;
+      right: 20px;
+      z-index: 45;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    @media (min-width: 1024px) {
+      .floating-quick-btn {
+        bottom: 28px;
+        right: 28px;
+      }
+    }
+
+    /* Anti-Drug & Hope Recovery Animated Motifs */
+    @keyframes floatMotif1 {
+      0%, 100% { transform: translate(0px, 0px) rotate(0deg) scale(1); }
+      33% { transform: translate(12px, -24px) rotate(6deg) scale(1.05); }
+      66% { transform: translate(-10px, -45px) rotate(-4deg) scale(0.98); }
+    }
+    @keyframes floatMotif2 {
+      0%, 100% { transform: translate(0px, 0px) rotate(0deg) scale(0.95); }
+      50% { transform: translate(-18px, -32px) rotate(-8deg) scale(1.08); }
+    }
+    @keyframes floatMotif3 {
+      0%, 100% { transform: translate(0px, 0px) rotate(0deg); }
+      50% { transform: translate(15px, -38px) rotate(10deg); }
+    }
+
+    .motif-drift-1 { animation: floatMotif1 14s ease-in-out infinite; }
+    .motif-drift-2 { animation: floatMotif2 18s ease-in-out infinite; }
+    .motif-drift-3 { animation: floatMotif3 16s ease-in-out infinite; }
+
+    /* Smoke-to-Light Glow Gradient Animation */
+    @keyframes smokeDissolvePulse {
+      0%, 100% { opacity: 0.45; filter: blur(30px); }
+      50% { opacity: 0.85; filter: blur(45px); }
+    }
+    .smoke-recovery-halo {
+      animation: smokeDissolvePulse 8s ease-in-out infinite;
+    }
+
+    /* Interactive Anti-Drug Canvas Overlay */
+    #antiDrugCanvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.85;
+    }
+
+    /* Transformation Cards Styling */
+    .journey-card {
+      transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .journey-card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* Gold Sheen Border for Key Highlights */
+    .gold-emboss-border {
+      border: 2px solid #fde68a;
+      box-shadow: 0 10px 25px -5px rgba(217, 119, 6, 0.12);
+    }
+
+    /* Assessment interactive checkboxes */
+    .custom-check-pill {
+      cursor: pointer;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+    .custom-check-pill:hover {
+      background-color: #f0fdf4;
+      border-color: #86efac;
+    }
+    .custom-check-pill.checked {
+      background-color: #ecfdf5;
+      border-color: #059669;
+      box-shadow: 0 4px 12px -2px rgba(5, 150, 105, 0.2);
+    }
+
+    /* Timeline Day Schedule */
+    .schedule-time-badge {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      letter-spacing: 0.5px;
+    }
+
+    /* Scroll To Top Circular Progress */
+    #backToTopBtn {
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(0.85);
+      transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    #backToTopBtn.visible {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1);
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) for Local Business / Medical Clinic SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalClinic",
+    "name": "স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র",
+    "alternateName": "Shopno Sathi Madokashokti Nirmoy Kendro",
+    "url": "https://www.sopnosathi.online/",
+    "description": "মাদকাসক্তি থেকে স্থায়ী মুক্তির লক্ষ্যে বিজ্ঞানসম্মত চিকিৎসা, কাউন্সেলিং ও মানবিক পরিচর্যা প্রদানকারী নিরাময় কেন্দ্র, শেরপুর।",
+    "image": "https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png",
+    "logo": "https://i.ibb.co.com/ZzMfxNdf/1-BB222-BC-D5-EE-4-D55-B548-45-F556-D2-E60-B.png",
+    "telephone": "+8801712490208",
+    "medicalSpecialty": "Addiction Medicine",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "মনিপাড়া ভবন, খরমপুর, শেরপুর টাউন",
+      "addressLocality": "শেরপুর",
+      "addressRegion": "ময়মনসিংহ বিভাগ",
+      "addressCountry": "BD"
+    },
+    "openingHours": "Mo-Su 00:00-23:59",
+    "priceRange": "$$",
+    "founder": {
+      "@type": "Person",
+      "name": "আমির আবু সুফিয়ান মনি"
+    }
+  }
+  </script>
+</head>
+<body class="bg-texture-warm selection:bg-brand-200 selection:text-brand-950">
+
+  <!-- ==================== TOP ANNOUNCEMENT BAR ==================== -->
+  <div class="bg-gradient-to-r from-emerald-950 via-brand-900 to-emerald-950 text-emerald-100 text-xs sm:text-sm py-2 px-4 border-b border-emerald-800/80 shadow-xs">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-emerald-800/90 text-emerald-200 font-semibold text-[11px] sm:text-xs border border-emerald-700/60">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          মাদকদ্রব্য নিয়ন্ত্রণ অধিদপ্তর অনুমোদিত • রেজিঃ শেরপুর-০৪
+        </span>
+        <span class="hidden md:inline text-emerald-400/80">•</span>
+        <span class="text-slate-200 font-medium hidden sm:inline-flex items-center gap-1 text-xs">
+          <svg class="w-3.5 h-3.5 text-emerald-300 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          মনিপাড়া ভবন, খরমপুর, শেরপুর টাউন
+        </span>
+      </div>
+      <div class="flex items-center gap-3 sm:gap-4 text-xs font-semibold">
+        <a href="tel:+8801712490208" class="text-amber-300 hover:text-white transition-colors flex items-center gap-1.5">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>হটলাইন:</span> <span class="font-bold tracking-wide">০১৭১২-৪৯০২০৮</span>
+        </a>
+        <span class="text-emerald-600 hidden sm:inline">|</span>
+        <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%80%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%20%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" target="_blank" rel="noopener noreferrer" class="text-emerald-200 hover:text-white transition-colors hidden sm:inline-flex items-center gap-1">
+          <svg class="w-3.5 h-3.5 text-emerald-400 fill-current" viewBox="0 0 24 24">
+            <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+          </svg>
+          <span>হোয়াটসঅ্যাপ</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MAIN HEADER & NAVIGATION ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-emerald-100 shadow-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Authentic Logo & Organization Name -->
+        <a href="#home" class="flex items-center gap-3.5 group focus:outline-none focus:ring-2 focus:ring-brand-500 rounded-xl p-1">
+          <img 
+            src="https://i.ibb.co.com/ZzMfxNdf/1-BB222-BC-D5-EE-4-D55-B548-45-F556-D2-E60-B.png" 
+            alt="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র লোগো" 
+            referrerpolicy="no-referrer"
+            width="56" height="56"
+            decoding="async"
+            fetchpriority="high"
+            class="w-14 h-14 object-contain rounded-xl p-0.5 border border-emerald-200 shadow-xs bg-white group-hover:scale-105 transition-transform"
+          />
+          <div>
+            <span class="block text-xl sm:text-2xl font-bold text-slate-900 tracking-tight leading-tight group-hover:text-brand-700 transition-colors">
+              স্বপ্ন সাথী
+            </span>
+            <span class="block text-xs sm:text-sm font-semibold text-brand-700">
+              মাদকাসক্তি নিরাময় কেন্দ্র
+            </span>
+            <span class="block text-[11px] text-slate-500 font-medium">
+              রেজিঃ নং- শেরপুর-০৪
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center space-x-1 xl:space-x-1.5 text-slate-700 font-semibold text-xs xl:text-sm" aria-label="প্রধান নেভিগেশন">
+          <a href="#home" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">হোম</a>
+          <a href="#about" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">লক্ষ্য</a>
+          <a href="#transformation" class="px-2.5 py-2 rounded-lg text-emerald-800 bg-emerald-50/80 hover:bg-emerald-100 font-bold transition-colors">রূপান্তর</a>
+          <a href="#easy-guide" class="px-2.5 py-2 rounded-lg text-brand-900 bg-emerald-100/90 hover:bg-emerald-200/90 border border-emerald-300 font-bold transition-colors">সহজ গাইড</a>
+          <a href="#services" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">সেবা</a>
+          <a href="#daily-schedule" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">দিনলিপি</a>
+          <a href="#facilities" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">সুবিধাসমূহ</a>
+          <a href="#gallery" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">চিত্র</a>
+          <a href="#director" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">পরিচালক</a>
+          <a href="#testimonials" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">অভিজ্ঞতা</a>
+          <a href="#admission-checklist" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">ভর্তি গাইড</a>
+          <a href="#contact" class="px-2.5 py-2 rounded-lg hover:text-brand-700 hover:bg-emerald-50 transition-colors">যোগাযোগ</a>
+        </nav>
+
+        <!-- Desktop Action Buttons -->
+        <div class="hidden lg:flex items-center gap-3">
+          <a href="tel:+8801712490208" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all active:scale-95">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span>জরুরি কল</span>
+          </a>
+          <a href="https://maps.app.goo.gl/mmJ8TfbsnMSWAe7z8?g_st=ic" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl border border-slate-300 hover:border-brand-500 hover:bg-emerald-50 text-slate-700 hover:text-brand-700 transition-colors" title="গুগল ম্যাপে শেরপুর কেন্দ্র দেখুন">
+            <svg class="w-5 h-5 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </a>
+        </div>
+
+        <!-- Mobile Controls -->
+        <div class="flex lg:hidden items-center gap-2">
+          <a href="tel:+8801712490208" class="px-3 py-2 rounded-xl bg-brand-600 text-white font-bold text-xs flex items-center gap-1.5 shadow-xs">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span>জরুরি কল</span>
+          </a>
+          <button id="mobileMenuBtn" type="button" class="p-2.5 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-500" aria-label="মোবাইল মেনু">
+            <svg id="hamburgerIcon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg id="closeIcon" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-slate-200 px-4 pt-3 pb-6 space-y-1 shadow-xl">
+      <a href="#home" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">হোম</a>
+      <a href="#about" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">আমাদের লক্ষ্য</a>
+      <a href="#transformation" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-bold text-emerald-800 bg-emerald-50 border border-emerald-200">জীবনের রূপান্তর যাত্রা (অন্ধকার ➔ আলো)</a>
+      <a href="#easy-guide" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-bold text-brand-900 bg-emerald-100/90 border border-emerald-300">সহজ ভর্তি ও আরোগ্য গাইড</a>
+      <a href="#services" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">চিকিৎসা ও সেবা</a>
+      <a href="#daily-schedule" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">সুশৃঙ্খল দিনলিপি ও রুটিন</a>
+      <a href="#facilities" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">সুবিধাসমূহ</a>
+      <a href="#gallery" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">বাস্তব গ্যালারি</a>
+      <a href="#director" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">পরিচালকের বক্তব্য</a>
+      <a href="#testimonials" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">সুস্থ পরিবারের বাস্তব অভিজ্ঞতা</a>
+      <a href="#admission-checklist" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">ভর্তি গাইড ও নথিপত্র</a>
+      <a href="#faq" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">সাধারণ জিজ্ঞাসা</a>
+      <a href="#contact" class="mobile-nav-link block px-4 py-2.5 rounded-xl font-semibold text-slate-800 hover:bg-emerald-50 hover:text-brand-700">যোগাযোগ</a>
+      
+      <div class="pt-4 border-t border-slate-100 grid grid-cols-2 gap-2">
+        <a href="tel:+8801712490208" class="flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-brand-600 text-white font-bold text-xs text-center shadow-xs">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>০১৭১২-৪৯০২০৮</span>
+        </a>
+        <a href="https://maps.app.goo.gl/mmJ8TfbsnMSWAe7z8?g_st=ic" target="_blank" rel="noopener noreferrer" class="flex items-center justify-center gap-1.5 py-3 px-3 rounded-xl bg-slate-800 text-white font-bold text-xs text-center shadow-xs">
+          <svg class="w-3.5 h-3.5 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          </svg>
+          <span>ম্যাপে অবস্থান</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== HERO SECTION (PREMIUM & AUTHENTIC CLINICAL REHABILITATION) ==================== -->
+  <section id="home" class="relative overflow-hidden pt-10 pb-20 lg:pt-20 lg:pb-28 hero-mesh-bg border-b border-emerald-100">
+    <!-- Interactive Anti-Drug & Hope Recovery Animated Canvas Backdrop -->
+    <canvas id="antiDrugCanvas" aria-hidden="true"></canvas>
+
+    <!-- Atmospheric Ambient Glow Orbs -->
+    <div class="ambient-glow w-96 h-96 bg-emerald-400/25 -top-24 -left-20"></div>
+    <div class="ambient-glow w-80 h-80 bg-amber-300/20 top-1/4 -right-20"></div>
+    <div class="ambient-glow w-96 h-96 bg-teal-300/20 bottom-10 left-1/3"></div>
+
+    <!-- Floating Anti-Drug Recovery Symbols (Soft Backdrop Dynamic Motifs) -->
+    <div class="absolute inset-0 pointer-events-none overflow-hidden z-0 select-none opacity-60">
+      <!-- Motif 1: Anti-Drug Emblem -->
+      <div class="absolute top-12 right-12 lg:right-32 motif-drift-1 flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-100/80 border border-emerald-300 text-emerald-900 text-xs font-bold shadow-xs">
+        <span class="text-base">🚫</span>
+        <span>মাদকমুক্ত জীবন</span>
+      </div>
+      <!-- Motif 2: Fresh Leaf of New Life -->
+      <div class="absolute top-1/3 left-4 lg:left-16 motif-drift-2 flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-100/80 border border-teal-300 text-teal-900 text-xs font-bold shadow-xs">
+        <span class="text-base">🌿</span>
+        <span>সুস্থতার নবসূচনা</span>
+      </div>
+      <!-- Motif 3: Dove of Peace & Freedom -->
+      <div class="absolute bottom-24 right-8 lg:right-24 motif-drift-3 flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-100/80 border border-amber-300 text-amber-950 text-xs font-bold shadow-xs">
+        <span class="text-base">🕊️</span>
+        <span>মানসিক প্রশান্তি</span>
+      </div>
+      <!-- Motif 4: Family Shield -->
+      <div class="absolute bottom-12 left-10 lg:left-1/4 motif-drift-1 flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50/90 border border-emerald-200 text-emerald-900 text-xs font-bold shadow-xs">
+        <span class="text-base">🛡️</span>
+        <span>পারিবারিক সুরক্ষা</span>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Top Badge: Government License & Emergency Hotline -->
+      <div class="flex flex-wrap items-center justify-between gap-3 mb-6">
+        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-emerald-100/90 border border-emerald-300 text-emerald-950 text-xs sm:text-sm font-bold shadow-xs">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600 pulse-badge"></span>
+          <span>সরকারি লাইসেন্সপ্রাপ্ত প্রতিষ্ঠান • রেজিঃ নং- শেরপুর-০৪</span>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/95 border border-amber-300 shadow-xs text-xs font-bold text-slate-800">
+          <span class="w-2 h-2 rounded-full bg-amber-500 animate-ping"></span>
+          <span>জরুরি রোগী আনা-নেওয়ায় ২৪/৭ সহায়তা:</span>
+          <a href="tel:+8801712490208" class="text-brand-700 hover:text-brand-900 underline font-extrabold">০১৭১২-৪৯০২০৮</a>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left: Core Mission Texts -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left reveal">
+          
+          <h1 class="text-3xl sm:text-4xl lg:text-[46px] font-extrabold text-slate-900 tracking-tight leading-[1.3] sm:leading-[1.25]">
+            স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র
+          </h1>
+          <p class="text-lg sm:text-2xl font-bold text-brand-700 flex items-center justify-center lg:justify-start gap-2">
+            <span>মাদকাসক্তি থেকে স্থায়ী মুক্তির নির্ভরযোগ্য চিকিৎসালয় ও সেবা</span>
+          </p>
+
+          <div class="p-6 sm:p-7 rounded-2xl glass-card-refined shadow-md">
+            <p class="text-base sm:text-lg text-slate-700 font-medium leading-relaxed">
+              বিজ্ঞানসম্মত চিকিৎসা, সার্বক্ষণিক মানসিক কাউন্সেলিং ও মমতাময় সুশৃঙ্খল পরিচর্যার মাধ্যমে একজন মানুষকে পুনরায় আত্মবিশ্বাসী, সুস্থ ও স্বাভাবিক জীবনে ফিরিয়ে আনার একনিষ্ঠ অঙ্গীকার।
+            </p>
+          </div>
+
+          <!-- Direct Calls to Action -->
+          <div class="pt-2 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5">
+            <a href="tel:+8801712490208" class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-lg hover:shadow-xl transition-all active:scale-95">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>জরুরি কল: ০১৭১২-৪৯০২০৮</span>
+            </a>
+
+            <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%80%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%20%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-base shadow-sm hover:shadow-md transition-all active:scale-95">
+              <svg class="w-5 h-5 fill-current text-emerald-300" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+              </svg>
+              <span>হোয়াটসঅ্যাপে পরামর্শ</span>
+            </a>
+
+            <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-4 rounded-xl bg-white hover:bg-emerald-50 text-slate-800 font-bold text-base border border-emerald-200 shadow-xs transition-colors">
+              <span>ভর্তি ও সাক্ষাৎ প্রক্রিয়া</span>
+              <svg class="w-4 h-4 text-emerald-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Four Certified Pillars Matrix -->
+          <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-2.5 sm:gap-3 text-center">
+            <div class="p-3.5 rounded-2xl bg-white/95 border border-emerald-200/80 shadow-xs hover:border-emerald-400 transition-colors">
+              <div class="w-7 h-7 mx-auto mb-1 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold text-xs">
+                ✓
+              </div>
+              <p class="text-[11px] text-slate-500 font-semibold">লাইসেন্স ও অনুমোদন</p>
+              <p class="text-xs sm:text-sm font-bold text-emerald-950 mt-0.5">রেজিঃ শেরপুর-০৪</p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-white/95 border border-emerald-200/80 shadow-xs hover:border-emerald-400 transition-colors">
+              <div class="w-7 h-7 mx-auto mb-1 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold text-xs">
+                ⚡
+              </div>
+              <p class="text-[11px] text-slate-500 font-semibold">জরুরি পরিষেবা</p>
+              <p class="text-xs sm:text-sm font-bold text-emerald-950 mt-0.5">২৪/৭ সার্বক্ষণিক ভর্তি</p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-white/95 border border-emerald-200/80 shadow-xs hover:border-emerald-400 transition-colors">
+              <div class="w-7 h-7 mx-auto mb-1 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold text-xs">
+                🔒
+              </div>
+              <p class="text-[11px] text-slate-500 font-semibold">নৈতিক সুরক্ষা</p>
+              <p class="text-xs sm:text-sm font-bold text-emerald-950 mt-0.5">১০০% কঠোর গোপনীয়তা</p>
+            </div>
+
+            <div class="p-3.5 rounded-2xl bg-white/95 border border-emerald-200/80 shadow-xs hover:border-emerald-400 transition-colors">
+              <div class="w-7 h-7 mx-auto mb-1 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-800 font-bold text-xs">
+                🤝
+              </div>
+              <p class="text-[11px] text-slate-500 font-semibold">পরিচর্যা নীতি</p>
+              <p class="text-xs sm:text-sm font-bold text-emerald-950 mt-0.5">সহিংসতামুক্ত মানবিক সেবা</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Real Photo of Center Entrance Banner -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-white floating-card">
+            <img 
+              src="https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png" 
+              alt="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র - শেরপুর ভবন ও ব্যানার" 
+              referrerpolicy="no-referrer"
+              width="1200" height="700"
+              decoding="async"
+              fetchpriority="high"
+              class="w-full h-80 sm:h-96 object-cover object-center"
+              loading="eager"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/90 via-slate-950/30 to-transparent flex flex-col justify-end p-5 sm:p-6 text-white">
+              <div class="flex items-center gap-2 mb-2">
+                <span class="px-2.5 py-1 bg-brand-600 text-white rounded-lg text-xs font-bold tracking-wide shadow-xs">
+                  শেরপুর মূল কেন্দ্র
+                </span>
+                <span class="px-2.5 py-1 bg-emerald-500/90 text-white rounded-lg text-xs font-bold tracking-wide shadow-xs flex items-center gap-1">
+                  <span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+                  <span>সার্বক্ষণিক ভর্তি সচল</span>
+                </span>
+                <span class="text-xs text-emerald-200 font-medium ml-auto hidden sm:inline-block">বাস্তব চিত্র</span>
+              </div>
+              <h3 class="text-xl font-bold text-white">স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র</h3>
+              <p class="text-xs sm:text-sm text-slate-200 mt-1">
+                মনিপাড়া ভবন, খরমপুর, শেরপুর টাউন, শেরপুর।
+              </p>
+              <div class="mt-3 pt-3 border-t border-white/20 flex items-center justify-between text-xs text-emerald-200">
+                <a href="tel:+8801712490208" class="inline-flex items-center gap-1.5 font-semibold text-white hover:text-emerald-300 transition-colors">
+                  <svg class="w-3.5 h-3.5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                  <span>০১৭১২-৪৯০২০৮</span>
+                </a>
+                <a href="https://maps.app.goo.gl/mmJ8TfbsnMSWAe7z8?g_st=ic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 font-bold text-amber-300 hover:text-white transition-colors">
+                  <span>গুগল ম্যাপে দেখুন</span>
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Seamless Curved Wave Transition into About -->
+    <div class="w-full overflow-hidden leading-none absolute bottom-0 left-0 right-0 z-10 pointer-events-none">
+      <svg class="relative block w-full h-6 sm:h-10 text-white fill-current" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M0,0 C300,80 800,10 1200,50 L1200,120 L0,120 Z"></path>
+      </svg>
+    </div>
+  </section>
+
+  <!-- ==================== ABOUT SECTION ==================== -->
+  <section id="about" class="py-16 lg:py-24 section-mesh-pure border-b border-emerald-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-900 bg-emerald-100/90 px-4 py-1.5 rounded-full border border-emerald-300">
+          প্রতিষ্ঠানের আদর্শ ও লক্ষ্য
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
+          সম্মানজনক আরোগ্য, মানসিক নবজাগরণ ও সামাজিক প্রতিষ্ঠা
+        </h2>
+        <p class="text-slate-700 text-base sm:text-lg leading-relaxed">
+          মাদকাসক্তি একটি নিরাময়যোগ্য মানসিক ও জৈবিক ব্যাধি। সামাজিক অনুশাসন বা শাস্তিমূলক দৃষ্টিভঙ্গির বদলে প্রয়োজন আধুনিক চিকিৎসাবিজ্ঞান, মমতাময় কাউন্সেলিং এবং পরিবারের অকৃত্রিম মানসিক সমর্থন—যা একজন ব্যক্তিকে স্থায়ী আরোগ্যের পথে পরিচালিত করে।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Pillar 1 -->
+        <div class="p-7 rounded-3xl bg-emerald-50/60 border border-emerald-200/80 hover:border-brand-400 transition-all shadow-xs hover:shadow-md reveal">
+          <div class="w-14 h-14 rounded-2xl bg-brand-600 text-white flex items-center justify-center mb-5 shadow-sm">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">পরিবারের অটুট মনোবল গঠন</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            রোগীর সুস্থতায় পরিবারের ভূমিকাই প্রধান চালিকাশক্তি। পরিবারকে বাস্তবমুখী চিকিৎসা শিক্ষা, ধৈর্য ধারণের মানসিক রসদ এবং পারস্পরিক সম্পর্ক পুনরুদ্ধারে ধারাবাহিক কাউন্সেলিং দেওয়া হয়।
+          </p>
+        </div>
+
+        <!-- Pillar 2 -->
+        <div class="p-7 rounded-3xl bg-emerald-50/60 border border-emerald-200/80 hover:border-brand-400 transition-all shadow-xs hover:shadow-md reveal">
+          <div class="w-14 h-14 rounded-2xl bg-teal-600 text-white flex items-center justify-center mb-5 shadow-sm">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">সুশৃঙ্খল ও বিজ্ঞানসম্মত পরিচর্যা</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            পর্যাপ্ত পুষ্টিকর আহার, নিয়মিত মেডিটেশন ও শরীরচর্চা, আধ্যাত্মিক চর্চা এবং স্বাস্থ্যবিধি মেনে পরিচালিত দৈনন্দিন রুটিনের মাধ্যমে রোগীকে শারীরিক ও মানসিক স্থিতিশীলতা ফিরিয়ে দেওয়া হয়।
+          </p>
+        </div>
+
+        <!-- Pillar 3 -->
+        <div class="p-7 rounded-3xl bg-emerald-50/60 border border-emerald-200/80 hover:border-brand-400 transition-all shadow-xs hover:shadow-md reveal">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-700 text-white flex items-center justify-center mb-5 shadow-sm">
+            <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">স্বাবলম্বী ও স্বাভাবিক জীবনে প্রত্যাবর্তন</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            আমাদের চূড়ান্ত লক্ষ্য সাময়িক বিরত রাখা নয়, বরং আত্মবিশ্বাস ও কর্মমুখী উদ্দীপনা জাগিয়ে রোগীকে সমাজের মূলধারায় একজন সম্মানিত, দায়িত্বশীল নাগরিক হিসেবে পুনর্প্রতিষ্ঠা করা।
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Trust Badges Metrics Ribbon -->
+      <div class="mt-12 pt-10 border-t border-emerald-100 grid grid-cols-2 md:grid-cols-4 gap-4 text-center reveal">
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-black text-brand-700">শেরপুর-০৪</div>
+          <div class="text-xs sm:text-sm text-slate-700 font-bold mt-1">সরকারি অনুমোদন ও লাইসেন্স</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-black text-brand-700">২৪/৭ ঘণ্টা</div>
+          <div class="text-xs sm:text-sm text-slate-700 font-bold mt-1">জরুরি রোগী ভর্তি ও তত্ত্বাবধান</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-black text-brand-700">১০০%</div>
+          <div class="text-xs sm:text-sm text-slate-700 font-bold mt-1">ব্যক্তিগত ও পারিবারিক গোপনীয়তা</div>
+        </div>
+        <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200/90 shadow-xs">
+          <div class="text-2xl sm:text-3xl font-black text-brand-700">অভিজ্ঞ টিম</div>
+          <div class="text-xs sm:text-sm text-slate-700 font-bold mt-1">চিকিৎসক ও সার্টিফাইড কাউন্সেলর</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== LIFE TRANSFORMATION JOURNEY (জীবনের রূপান্তর: অন্ধকার থেকে আলোর পথ) ==================== -->
+  <section id="transformation" class="py-16 lg:py-24 bg-gradient-to-b from-emerald-50/40 via-white to-emerald-50/30 border-b border-emerald-100 relative overflow-hidden">
+    <!-- Ambient glowing backdrop -->
+    <div class="ambient-glow w-80 h-80 bg-rose-200/20 top-12 -left-20"></div>
+    <div class="ambient-glow w-96 h-96 bg-emerald-200/25 bottom-10 right-0"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-900 bg-emerald-100/90 border border-emerald-300 px-4 py-1.5 rounded-full shadow-2xs">
+          আরোগ্যের বাস্তব রূপান্তর
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
+          অন্ধকার নেশার পথ থেকে সুস্থ ও আলোকিত ভবিষ্যৎ
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          একটি সঠিক চিকিৎসার সিদ্ধান্ত বদলে দিতে পারে একটি মানুষের গোটা জীবন ও একটি পরিবারের ভাগ্য। দেখুন স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র-এর অভিজ্ঞ পরিচালনায় কীভাবে ঘটে এই আমূল রূপান্তর:
+        </p>
+      </div>
+
+      <!-- 3-Phase Interactive Transformation Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        
+        <!-- Phase 1: The Dark Struggle (আগের জীবন) -->
+        <div class="journey-card p-7 rounded-3xl bg-white border-2 border-slate-200 shadow-sm flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-rose-100 text-rose-800 text-xs font-bold border border-rose-200">
+                পর্যায় ০১: চিকিৎসার পূর্বে
+              </span>
+              <span class="text-2xl">🌑</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-2">নেশার অন্ধকার ও বিভ্রান্তি</h3>
+            <p class="text-xs sm:text-sm text-slate-500 mb-5 leading-relaxed">
+              মাদকের মায়াজালে আবদ্ধ হয়ে ব্যক্তি ও পরিবার প্রতিদিন যে অসহ্য মানসিক ও সামাজিক যন্ত্রণার মধ্য দিয়ে যায়:
+            </p>
+
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-600 font-bold flex items-center justify-center shrink-0 text-xs">✕</span>
+                <span>পরিবারের সাথে চরম দূরত্ব, মিথ্যাচার ও সম্পর্কের অবনতি</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-600 font-bold flex items-center justify-center shrink-0 text-xs">✕</span>
+                <span>তীব্র মানসিক হতাশা, অপরাধবোধ ও খিটখিটে মেজাজ</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-600 font-bold flex items-center justify-center shrink-0 text-xs">✕</span>
+                <span>শারীরিক দুর্বলতা, ক্ষুধাহীনতা ও মারাত্মক অনিদ্রা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-rose-50 text-rose-600 font-bold flex items-center justify-center shrink-0 text-xs">✕</span>
+                <span>পড়াশোনা বা কর্মক্ষেত্রে ব্যর্থতা ও সামাজিক বিচ্ছিন্নতা</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-slate-100">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-rose-700">
+              <span>⚠️</span> এ অবস্থা থেকে উত্তরণে অভিজ্ঞ চিকিৎসার বিকল্প নেই
+            </span>
+          </div>
+        </div>
+
+        <!-- Phase 2: Care at Shopno Sathi (বর্তমান নিরাময়) -->
+        <div class="journey-card p-7 rounded-3xl bg-gradient-to-b from-emerald-50/90 to-white border-2 border-emerald-400 shadow-md flex flex-col justify-between relative reveal">
+          <!-- Top Popular Badge -->
+          <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-0.5 rounded-full bg-brand-600 text-white font-bold text-[11px] shadow-sm tracking-wider uppercase">
+            স্বপ্ন সাথী-তে নিরাময়
+          </div>
+
+          <div>
+            <div class="flex items-center justify-between mb-4 mt-1">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-300">
+                পর্যায় ০২: চিকিৎসা ও কাউন্সেলিং
+              </span>
+              <span class="text-2xl">🌿</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-2">বিজ্ঞানসম্মত চিকিৎসা ও মমতাময় পরিচর্যা</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-5 leading-relaxed">
+              শাস্তি নয়, ভালোবাসা ও চিকিৎসাবিজ্ঞানের সমন্বয়ে রোগীকে সুস্থ করে তোলার নিরাপদ পর্যায়:
+            </p>
+
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs">✓</span>
+                <span>চিকিৎসকের তত্ত্বাবধানে নিরাপদ ডিটক্সিফিকেশন ও পর্যবেক্ষণ</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs">✓</span>
+                <span>অভিজ্ঞ সাইকোলজিস্টের ওয়ান-টু-ওয়ান নিয়মিত কাউন্সেলিং</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs">✓</span>
+                <span>সুষম পুষ্টিকর খাদ্য, স্বাস্থ্যকর ঘুম ও সুশৃঙ্খল পরিবেশ</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 font-bold flex items-center justify-center shrink-0 text-xs">✓</span>
+                <span>মেডিটেশন, শরীরচর্চা ও আধ্যাত্মিক মূল্যবোধ চর্চা</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-emerald-100">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-brand-800">
+              <span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span>
+              ২৪ ঘণ্টা সার্বক্ষণিক নজরদারি ও সহমর্মিতা
+            </span>
+          </div>
+        </div>
+
+        <!-- Phase 3: The Victorious Recovery (ভবিষ্যত নতুন জীবন) -->
+        <div class="journey-card p-7 rounded-3xl bg-gradient-to-b from-amber-50/70 to-white border-2 border-amber-300 shadow-sm flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-bold border border-amber-300">
+                পর্যায় ০৩: সুস্থ জীবনের সূচনা
+              </span>
+              <span class="text-2xl">☀️</span>
+            </div>
+
+            <h3 class="text-xl font-bold text-slate-900 mb-2">সম্মানজনক ও সুস্থ স্বাভাবিক জীবন</h3>
+            <p class="text-xs sm:text-sm text-slate-600 mb-5 leading-relaxed">
+              আরোগ্য লাভের পর পরিবারের প্রিয় মানুষটির চিরচেনা সেই আনন্দের পুনর্জাগরণ:
+            </p>
+
+            <ul class="space-y-3 text-sm text-slate-700">
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0 text-xs">★</span>
+                <span>আত্মবিশ্বাস ও আত্মমর্যাদা নিয়ে স্বাভাবিক জীবনে ফিরে আসা</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0 text-xs">★</span>
+                <span>পরিবারে ফিরবে অনাবিল প্রশান্তি, স্বস্তি ও মিষ্টি হাসি</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0 text-xs">★</span>
+                <span>পড়াশোনা বা ব্যবসা-বাণিজ্যে নব উদ্যমে সফলভাবে ফিরে যাওয়া</span>
+              </li>
+              <li class="flex items-start gap-2.5">
+                <span class="w-5 h-5 rounded-full bg-amber-100 text-amber-800 font-bold flex items-center justify-center shrink-0 text-xs">★</span>
+                <span>রিল্যাপ্স প্রতিরোধ কৌশলে দীর্ঘমেয়াদে আজীবন মাদকমুক্ত থাকা</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="mt-8 pt-4 border-t border-amber-100">
+            <span class="inline-flex items-center gap-1.5 text-xs font-bold text-amber-900">
+              <span>🕊️</span> নতুন জীবনের সূচনা এখানেই
+            </span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Inspirational Banner Strip -->
+      <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-white border border-emerald-200 shadow-md reveal flex flex-col md:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 rounded-2xl bg-brand-100 text-brand-700 flex items-center justify-center shrink-0 font-bold text-xl">
+            🤝
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg">দেরি না করে আজই নিন সুস্থতার সঠিক সিদ্ধান্ত</h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-0.5">একটি নির্ভুল পদক্ষেপ বাঁচিয়ে দিতে পারে একটি অমূল্য প্রাণ ও সুখের সংসার।</p>
+          </div>
+        </div>
+        <div class="shrink-0 flex items-center gap-3">
+          <a href="tel:+8801712490208" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all active:scale-95">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <span>পরামর্শ নিতে কল করুন</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== EASY-TO-UNDERSTAND ADMISSION & RECOVERY GUIDE (সবকিছু সহজে বুঝে নিন) ==================== -->
+  <section id="easy-guide" class="py-16 lg:py-24 bg-white border-b border-emerald-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-800 bg-emerald-100/90 border border-emerald-300 px-4 py-1.5 rounded-full shadow-2xs">
+          সহজ গাইড ও নির্দেশিকা
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
+          সবকিছু এক নজরে সহজে বুঝে নিন
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          মাদকাসক্তি কোনো অপরাধ বা লজ্জার বিষয় নয় — এটি চিকিৎসায় শতভাগ নিরাময়যোগ্য একটি রোগ। আপনার পরিবার যেন সম্পূর্ণ নিশ্চিন্তে ও সহজে সঠিক সিদ্ধান্ত নিতে পারে, সেজন্য সব প্রয়োজনীয় তথ্য নিচে পরিষ্কারভাবে তুলে ধরা হলো:
+        </p>
+      </div>
+
+      <!-- Part 1: Simple 3 Steps to Recovery (সহজ ৩ ধাপে আরোগ্য যাত্রা) -->
+      <div class="mb-16">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="w-2.5 h-8 rounded-full bg-brand-600"></span>
+          <h3 class="text-xl sm:text-2xl font-bold text-slate-900">
+            সহজ ৩টি ধাপে রোগী ভর্তি ও নিরাময় প্রক্রিয়া
+          </h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+          
+          <!-- Step 1 -->
+          <div class="p-7 rounded-3xl bg-gradient-to-b from-emerald-50/70 to-white border-2 border-emerald-200/90 shadow-sm hover:shadow-md hover:border-brand-500 transition-all reveal relative">
+            <div class="flex items-center justify-between mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-brand-600 text-white font-extrabold text-xl flex items-center justify-center shadow-md">
+                ১
+              </span>
+              <span class="text-xs font-bold text-brand-800 bg-brand-100 px-3 py-1 rounded-full border border-brand-200">
+                প্রথম ধাপ
+              </span>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2.5">সরাসরি ফোন বা হোয়াটসঅ্যাপে যোগাযোগ</h4>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
+              আমাদের সার্বক্ষণিক জরুরি নাম্বারে কল করুন। রোগীর বর্তমান অবস্থা, বয়স ও সমস্যা নির্দ্বিধায় শেয়ার করুন। আমরা প্রতিটি বিষয় শতভাগ গোপনীয় রাখি।
+            </p>
+            <div class="pt-2 border-t border-emerald-100">
+              <a href="tel:+8801712490208" class="inline-flex items-center gap-2 text-brand-700 hover:text-brand-800 font-bold text-sm">
+                <svg class="w-4 h-4 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span>০১৭১২-৪৯০২০৮ (কল করুন)</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="p-7 rounded-3xl bg-gradient-to-b from-teal-50/70 to-white border-2 border-teal-200/90 shadow-sm hover:shadow-md hover:border-teal-500 transition-all reveal relative">
+            <div class="flex items-center justify-between mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-teal-600 text-white font-extrabold text-xl flex items-center justify-center shadow-md">
+                ২
+              </span>
+              <span class="text-xs font-bold text-teal-800 bg-teal-100 px-3 py-1 rounded-full border border-teal-200">
+                দ্বিতীয় ধাপ
+              </span>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2.5">কেন্দ্রে আগমন ও চিকিৎসকের মূল্যায়ন</h4>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
+              রোগীকে সাথে নিয়ে শেরপুর টাউন খরমপুর মনিপাড়া ভবনে আমাদের কেন্দ্রে আসুন। অভিজ্ঞ চিকিৎসক ও সাইকোলজিস্ট রোগীর শারীরিক ও মানসিক অবস্থা পর্যবেক্ষণ করে ভর্তি নিশ্চিত করবেন।
+            </p>
+            <div class="pt-2 border-t border-teal-100">
+              <a href="https://maps.app.goo.gl/mmJ8TfbsnMSWAe7z8?g_st=ic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 text-teal-700 hover:text-teal-800 font-bold text-sm">
+                <svg class="w-4 h-4 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                </svg>
+                <span>গুগল ম্যাপে শেরপুর কেন্দ্র</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="p-7 rounded-3xl bg-gradient-to-b from-amber-50/70 to-white border-2 border-amber-200/90 shadow-sm hover:shadow-md hover:border-amber-500 transition-all reveal relative">
+            <div class="flex items-center justify-between mb-5">
+              <span class="w-12 h-12 rounded-2xl bg-amber-600 text-white font-extrabold text-xl flex items-center justify-center shadow-md">
+                ৩
+              </span>
+              <span class="text-xs font-bold text-amber-800 bg-amber-100 px-3 py-1 rounded-full border border-amber-200">
+                তৃতীয় ধাপ
+              </span>
+            </div>
+            <h4 class="text-xl font-bold text-slate-900 mb-2.5">চিকিৎসা, কাউন্সেলিং ও নতুন জীবন</h4>
+            <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-5">
+              সুশৃঙ্খল পরিবেশ, পুষ্টিকর খাবার, নিয়মিত মেডিটেশন ও মানসিক কাউন্সেলিংয়ের মাধ্যমে ক্ষতিকর নেশার মোহ দূর করে একজন সুস্থ, কর্মঠ ও পরিবারের প্রিয় মানুষ হিসেবে পূর্ণ রূপান্তর।
+            </p>
+            <div class="pt-2 border-t border-amber-100">
+              <span class="inline-flex items-center gap-1.5 text-xs font-bold text-slate-700">
+                <span class="text-emerald-600">✓</span> সুস্থ হয়ে সমাজে মাথা উঁচু করে ফিরে যাওয়া
+              </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Part 2: Warning Signs (কখন বুঝবেন চিকিৎসার প্রয়োজন?) -->
+      <div class="mb-16 p-8 sm:p-10 rounded-3xl bg-slate-50 border border-slate-200 shadow-xs reveal">
+        <div class="max-w-3xl mb-8">
+          <span class="text-xs font-bold text-rose-700 bg-rose-100 px-3 py-1 rounded-full uppercase tracking-wider">
+            সচেতনতামূলক নির্দেশনা
+          </span>
+          <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mt-2">
+            কখন বুঝবেন নিরাময় কেন্দ্রে নিয়ে আসার সময় হয়েছে?
+          </h3>
+          <p class="text-slate-600 text-sm sm:text-base mt-1">
+            মাদকাসক্ত ব্যক্তি শুরুতে বিষয়টি লুকাতে চেষ্টা করে। নিচের লক্ষণগুলোর ২-৩টি প্রকাশ পেলে অবিলম্বে চিকিৎসকের পরামর্শ নেওয়া জরুরি:
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          
+          <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 font-bold text-sm">
+              ১
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 text-sm">আচরণের আকস্মিক পরিবর্তন</h5>
+              <p class="text-xs text-slate-600 mt-0.5">অকারণে প্রচণ্ড রাগ, খিটখিটে মেজাজ, ঘরের দরজা বন্ধ করে একাকী সময় কাটানো।</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 font-bold text-sm">
+              ২
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 text-sm">আর্থিক অসঙ্গতি ও অপচয়</h5>
+              <p class="text-xs text-slate-600 mt-0.5">ঘন ঘন টাকার জন্য চাপ দেওয়া, মিথ্যা অজুহাত বা মূল্যবান জিনিসপত্র হারিয়ে যাওয়া।</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 font-bold text-sm">
+              ৩
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 text-sm">ঘুম ও খাদ্যাভ্যাসে বিপর্যয়</h5>
+              <p class="text-xs text-slate-600 mt-0.5">সারারাত জেগে থাকা, দিনের বেলায় অস্বাভাবিক ঘুম, ক্ষুধাহীনতা বা দ্রুত ওজন হ্রাস।</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 font-bold text-sm">
+              ৪
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 text-sm">শারীরিক দৃশ্যমান লক্ষণ</h5>
+              <p class="text-xs text-slate-600 mt-0.5">চোখ লাল থাকা, কথা জড়িয়ে যাওয়া, হাত-পা কাঁপা বা চরম শারীরিক ক্লান্তি।</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 font-bold text-sm">
+              ৫
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 text-sm">দায়িত্ব ও পড়াশোনায় অনীহা</h5>
+              <p class="text-xs text-slate-600 mt-0.5">স্কুল, কলেজ বা কর্মস্থলে নিয়মিত অনুপস্থিতি এবং ভবিষ্যৎ লক্ষ্য হারিয়ে ফেলা।</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3.5 p-4 rounded-2xl bg-white border border-slate-200/80 shadow-2xs">
+            <div class="w-9 h-9 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 font-bold text-sm">
+              ৬
+            </div>
+            <div>
+              <h5 class="font-bold text-slate-900 text-sm">নতুন সন্দেহজনক বন্ধুমহল</h5>
+              <p class="text-xs text-slate-600 mt-0.5">পুরনো পরিচিত বন্ধুদের ত্যাগ করা ও ফোনে অতিমাত্রায় গোপনীয়তা বজায় রাখা।</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Interactive Addiction Assessment & Recommendation Widget -->
+        <div class="mt-8 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-emerald-50/90 via-white to-teal-50/70 border-2 border-emerald-300 shadow-md reveal">
+          <div class="max-w-2xl mx-auto text-center mb-6">
+            <span class="px-3 py-1 rounded-full bg-emerald-200/80 text-emerald-950 font-bold text-xs tracking-wide uppercase">
+              ইন্টারেক্টিভ সেলফ-অ্যাসেসমেন্ট
+            </span>
+            <h4 class="text-xl sm:text-2xl font-bold text-slate-900 mt-2">
+              আপনার প্রিয়জনের মাদকাসক্তির লক্ষণ তাৎক্ষণিক যাচাই করুন
+            </h4>
+            <p class="text-xs sm:text-sm text-slate-600 mt-1">
+              নিচের যে লক্ষণগুলো মিলে যায় সেগুলোতে টিক দিন — সিস্টেম স্বয়ংক্রিয়ভাবে আপনাকে প্রয়োজনীয় চিকিৎসাগত দিকনির্দেশনা দেবে:
+            </p>
+          </div>
+
+          <!-- Symptom Clickable Pills -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-w-3xl mx-auto" id="symptomCheckGroup">
+            <div class="custom-check-pill p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-3 text-left" data-value="1">
+              <span class="check-box-indicator w-6 h-6 rounded-lg border-2 border-slate-300 flex items-center justify-center text-white text-xs font-bold shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-800">আচরণের আকস্মিক পরিবর্তন ও তীব্র খিটখিটে মেজাজ</span>
+            </div>
+
+            <div class="custom-check-pill p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-3 text-left" data-value="2">
+              <span class="check-box-indicator w-6 h-6 rounded-lg border-2 border-slate-300 flex items-center justify-center text-white text-xs font-bold shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-800">অস্বাভাবিক টাকার চাহিদা বা ঘরের জিনিস নিখোঁজ হওয়া</span>
+            </div>
+
+            <div class="custom-check-pill p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-3 text-left" data-value="3">
+              <span class="check-box-indicator w-6 h-6 rounded-lg border-2 border-slate-300 flex items-center justify-center text-white text-xs font-bold shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-800">সারারাত জেগে থাকা ও দিনের বেলা অস্বাভাবিক ঘুম</span>
+            </div>
+
+            <div class="custom-check-pill p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-3 text-left" data-value="4">
+              <span class="check-box-indicator w-6 h-6 rounded-lg border-2 border-slate-300 flex items-center justify-center text-white text-xs font-bold shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-800">চোখ লাল থাকা, কথা জড়িয়ে যাওয়া বা শারীরিক দুর্বলতা</span>
+            </div>
+
+            <div class="custom-check-pill p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-3 text-left" data-value="5">
+              <span class="check-box-indicator w-6 h-6 rounded-lg border-2 border-slate-300 flex items-center justify-center text-white text-xs font-bold shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-800">পড়াশোনা, চাকরি বা পরিবারের দায়িত্ব পালনে চরম অনীহা</span>
+            </div>
+
+            <div class="custom-check-pill p-3.5 rounded-2xl bg-white border border-slate-200 flex items-center gap-3 text-left" data-value="6">
+              <span class="check-box-indicator w-6 h-6 rounded-lg border-2 border-slate-300 flex items-center justify-center text-white text-xs font-bold shrink-0"></span>
+              <span class="text-xs sm:text-sm font-semibold text-slate-800">সন্দেহজনক নতুন বন্ধুবান্ধব ও ফোনে অতিমাত্রায় গোপনীয়তা</span>
+            </div>
+          </div>
+
+          <!-- Live Dynamic Recommendation Result Box -->
+          <div id="assessmentResultCard" class="mt-6 p-5 rounded-2xl bg-white border border-emerald-200 max-w-3xl mx-auto shadow-xs text-center sm:text-left transition-all">
+            <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2 justify-center sm:justify-start">
+                  <span id="assessmentBadge" class="px-2.5 py-0.5 rounded-md text-xs font-bold bg-slate-100 text-slate-700">
+                    লক্ষণ নির্বাচিত হয়নি (০টি)
+                  </span>
+                  <span id="assessmentSeverity" class="text-xs font-semibold text-slate-500">
+                    উপরে লক্ষণগুলোতে ক্লিক করুন
+                  </span>
+                </div>
+                <p id="assessmentAdviceText" class="text-xs sm:text-sm text-slate-700 font-medium leading-relaxed">
+                  আপনার প্রিয়জনের লক্ষণগুলো মিলিয়ে দেখুন। কোনো লক্ষণ থাকলে দ্রুত শনাক্ত করাই রোগীকে দ্রুত সুস্থ করার প্রথম উপায়।
+                </p>
+              </div>
+
+              <div class="shrink-0 flex items-center gap-2">
+                <a href="tel:+8801712490208" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs shadow-xs transition-all active:scale-95">
+                  <svg class="w-3.5 h-3.5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                  </svg>
+                  <span>পরামর্শ কল</span>
+                </a>
+                <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%85%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B8%E0%A7%87%E0%A6%B8%E0%A6%AE%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%20%E0%A6%9F%E0%A7%81%E0%A6%B2%E0%A7%87%20%E0%A6%95%E0%A6%BF%E0%A6%9B%E0%A7%81%20%E0%A6%B2%E0%A6%95%E0%A7%8D%E0%A6%B7%E0%A6%A3%20%E0%A6%AF%E0%A6%BE%E0%A6%9A%E0%A6%BE%E0%A6%87%20%E0%A6%95%E0%A6%B0%E0%A7%87%E0%A6%9B%E0%A6%BF%E0%A7%A4%20%E0%A6%8F%20%E0%A6%AC%E0%A6%BF%E0%A6%B7%E0%A6%AF%E0%A6%BC%E0%A7%87%20%E0%A6%AA%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A7%8D%E0%A6%B6%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3.5 py-2.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-xs shadow-xs transition-all active:scale-95">
+                  <svg class="w-3.5 h-3.5 text-emerald-300 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+                  </svg>
+                  <span>হোয়াটসঅ্যাপ</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part 3: What Families Care About Most (পরিবারের জন্য ৪টি নিশ্চয়তা) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 reveal">
+        
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-200 shadow-2xs">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold mb-3 shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-1">১০০% গোপনীয়তা</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">রোগীর নাম, পারিবারিক ঠিকানা বা কোনো তথ্য অনুমতি ছাড়া কখনো তৃতীয় পক্ষের কাছে প্রকাশ করা হয় না।</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-200 shadow-2xs">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold mb-3 shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-1">মানবিক ও স্বচ্ছ ফি</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">সরকারি নিয়মনীতি মেনে অত্যন্ত যৌক্তিক ও মানবিক চিকিৎসা খরচ। কোনো লুকানো চার্জ বা বাড়তি ফি নেই।</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-200 shadow-2xs">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold mb-3 shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-1">২৪/৭ নজরদারি ও যত্ন</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">সার্বক্ষণিক দক্ষ চিকিৎসা কর্মী, পুষ্টিকর খাবার ও নিরাপদ শয্যা ব্যবস্থা নিশ্চিত করা হয়।</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border border-emerald-200 shadow-2xs">
+          <div class="w-10 h-10 rounded-xl bg-emerald-600 text-white flex items-center justify-center font-bold mb-3 shadow-xs">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+            </svg>
+          </div>
+          <h4 class="font-bold text-slate-900 text-base mb-1">পরিবারের নিয়মিত সাক্ষাৎ</h4>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">চিকিৎসকের পরামর্শ অনুযায়ী নির্দিষ্ট দিনে পরিবারের সাথে সরাসরি দেখা এবং কাউন্সেলিং সেশন প্রদান।</p>
+        </div>
+
+      </div>
+
+      <!-- Quick Consultation CTA Ribbon -->
+      <div class="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-900 via-brand-900 to-emerald-950 text-white shadow-xl reveal">
+        <div class="flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+          <div>
+            <h4 class="text-xl sm:text-2xl font-bold">আপনার মনে কি কোনো প্রশ্ন বা দ্বিধা রয়েছে?</h4>
+            <p class="text-emerald-200 text-sm sm:text-base mt-1">সরাসরি আমাদের পরিচালকের সাথে কথা বলে সমাধান জেনে নিন — এক ফোন কলেই মিলবে প্রয়োজনীয় সহায়তা।</p>
+          </div>
+          <div class="flex flex-wrap items-center justify-center gap-3 shrink-0">
+            <a href="tel:+8801712490208" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-emerald-950 hover:bg-emerald-50 font-bold text-sm shadow-md transition-all active:scale-95">
+              <svg class="w-4 h-4 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>০১৭১২-৪৯০২০৮ (কল করুন)</span>
+            </a>
+            <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%80%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%20%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white font-bold text-sm border border-emerald-600 transition-all active:scale-95">
+              <svg class="w-4 h-4 fill-current text-emerald-300" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+              </svg>
+              <span>হোয়াটসঅ্যাপ মেসেজ</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== SERVICES SECTION (WITH CLEAR BENGALI SERIAL NUMBERS) ==================== -->
+  <section id="services" class="py-16 lg:py-24 section-mesh-sage border-b border-emerald-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-800 bg-brand-100 px-3.5 py-1.5 rounded-full">
+          সেবা কার্যক্রম
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900">
+          আমাদের মূল সেবাসমূহ
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          নিচের প্রতিটি ধাপে একজন রোগীকে আন্তরিক যত্ন ও সুনির্দিষ্ট নিরাময় পরিকল্পনা প্রদান করা হয়:
+        </p>
+      </div>
+
+      <!-- Services Grid with PROMINENT, BOLD Bengali Serial Numbers (ক্রমিক সংখ্যা ১ থেকে ৬) -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+        
+        <!-- Service 1 -->
+        <div class="service-card p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-xs reveal">
+          <div class="flex items-center justify-between mb-4">
+            <!-- Clear Bengali Serial Number Badge -->
+            <div class="serial-badge">১</div>
+            <span class="text-xs font-bold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
+              ক্রমিক ০১
+            </span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">ব্যক্তিগত কাউন্সেলিং</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            মাদকাসক্তির পেছনের মানসিক জটিলতা, বিষণ্নতা ও ক্ষোভ দূর করতে অভিজ্ঞ ও সহমর্মী কাউন্সেলরের সাথে নিয়মিত ওয়ান-টু-ওয়ান কাউন্সেলিং সেশন।
+          </p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-card p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-xs reveal">
+          <div class="flex items-center justify-between mb-4">
+            <div class="serial-badge">২</div>
+            <span class="text-xs font-bold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
+              ক্রমিক ০২
+            </span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">পারিবারিক সহায়তা ও কাউন্সেলিং</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            পরিবারের সদস্যদের রোগ সম্পর্কে বাস্তব জ্ঞান প্রদান, রোগীর সাথে স্বাস্থ্যকর আচরণের দিকনির্দেশনা এবং নিয়মিত পারিবারিক সেশন পরিচালনা।
+          </p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-card p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-xs reveal">
+          <div class="flex items-center justify-between mb-4">
+            <div class="serial-badge">৩</div>
+            <span class="text-xs font-bold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
+              ক্রমিক ০৩
+            </span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">প্রাথমিক পরিচর্যা ও পর্যবেক্ষণ</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            মাদক প্রত্যাহারকালীন প্রাথমিক স্বাস্থ্য পরীক্ষা, ভাইটাল সাইন পর্যবেক্ষণ এবং সার্বক্ষণিক দায়িত্বশীল চিকিৎসাগত যত্ন নিশ্চিত করা।
+          </p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-card p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-xs reveal">
+          <div class="flex items-center justify-between mb-4">
+            <div class="serial-badge">৪</div>
+            <span class="text-xs font-bold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
+              ক্রমিক ০৪
+            </span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">সুশৃঙ্খল ও জীবনমুখী শিক্ষা</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            ক্লাস রুমে নিয়মিত নৈতিক পাঠ, ধর্মীয় অনুশাসন, দৈনন্দিন শরীরচর্চা এবং সামাজিক দায়িত্ববোধ ফিরিয়ে আনার জন্য শৃঙ্খলাবদ্ধ জীবনধারা।
+          </p>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="service-card p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-xs reveal">
+          <div class="flex items-center justify-between mb-4">
+            <div class="serial-badge">৫</div>
+            <span class="text-xs font-bold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
+              ক্রমিক ০৫
+            </span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">রিল্যাপ্স প্রতিরোধ কৌশল</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            পুনরায় যাতে মাদকে ফিরে না যায়, সেজন্য মানসিক ট্রিগার চিহ্নিত করা, রাগ ও চাপ নিয়ন্ত্রণ এবং প্রতিকূল পরিস্থিতিতে নিজেকে স্থির রাখার কৌশল।
+          </p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-card p-6 sm:p-7 rounded-3xl bg-white border border-slate-200 shadow-xs reveal">
+          <div class="flex items-center justify-between mb-4">
+            <div class="serial-badge">৬</div>
+            <span class="text-xs font-bold text-brand-700 bg-brand-50 px-2.5 py-1 rounded-full border border-brand-200">
+              ক্রমিক ০৬
+            </span>
+          </div>
+          <h3 class="text-xl font-bold text-slate-900 mb-2.5">পরবর্তী ফলো-আপ ও দিকনির্দেশনা</h3>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+            কেন্দ্র থেকে সফলভাবে ছাড়পত্র পাওয়ার পরও রোগীর সঙ্গে নিয়মিত যোগাযোগ রাখা এবং স্থায়ী সুস্থতা বজায় রাখতে দিকনির্দেশনা প্রদান।
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FACILITIES SECTION ==================== -->
+  <section id="facilities" class="py-16 lg:py-24 bg-white border-b border-emerald-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-700 bg-emerald-50 px-3.5 py-1.5 rounded-full border border-emerald-200">
+          সুবিধাসমূহ
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900">
+          শান্ত, পরিচ্ছন্ন ও সুশৃঙ্খল আবাস
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          রোগীর আরোগ্য লাভের জন্য শেরপুর টাউনে মনিপাড়া ভবনে একটি নিরিবিলি, সুসজ্জিত ও স্বাস্থ্যকর পরিবেশ তৈরি করা হয়েছে।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Facility 1: Bed Room -->
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors shadow-xs reveal">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">পরিচ্ছন্ন বেড রুম ও শয্যা</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">পর্যাপ্ত আলো-বাতাসপূর্ণ, পরিপাটি এবং স্বাস্থ্যসম্মত ব্যক্তিগত বিশ্রামের নিশ্চিত সুব্যবস্থা।</p>
+          </div>
+        </div>
+
+        <!-- Facility 2: TV & Entertainment -->
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors shadow-xs reveal">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">টিভি ও ইতিবাচক বিনোদন</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">নির্দিষ্ট সময়ে টিভি দেখা, মানসিক চাপ উপশম ও গঠনমূলক আনন্দময় সুস্থ পরিবেশ।</p>
+          </div>
+        </div>
+
+        <!-- Facility 3: Classroom & Gym -->
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors shadow-xs reveal">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">ক্লাসরুম ও শারীরিক সুস্থতা</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">শারীরিক জড়তা কাটাতে নিয়মমাফিক হালকা ব্যায়াম, কাউন্সেলিং ক্লাস ও মোটিভেশনাল পাঠ।</p>
+          </div>
+        </div>
+
+        <!-- Facility 4: Nutrition & Kitchen -->
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors shadow-xs reveal">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 15.546c-.523 0-1.046.151-1.5.454a2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.704 2.704 0 01-3 0 2.704 2.704 0 00-3 0 2.701 2.701 0 00-1.5-.454M9 6v2m3-2v2m3-2v2M9 3h.01M12 3h.01M15 3h.01M21 21v-7a2 2 0 00-2-2H5a2 2 0 00-2 2v7h18z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">স্বাস্থ্যসম্মত নিজস্ব রান্নাঘর</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">তাজা ও পুষ্টিকর উপাদানে প্রস্তুত তিন বেলার সুষম খাবার এবং সান্ধ্যকালীন নাশতা।</p>
+          </div>
+        </div>
+
+        <!-- Facility 5: Security -->
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors shadow-xs reveal">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">সার্বক্ষণিক নিরাপত্তা ও পর্যবেক্ষণ</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">২৪ ঘণ্টা দায়িত্বশীল চিকিৎসাকর্মী ও সিকিউরিটি স্টাফদের সার্বিক তত্ত্বাবধান।</p>
+          </div>
+        </div>
+
+        <!-- Facility 6: Family Meetings -->
+        <div class="flex items-start gap-4 p-6 rounded-2xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 transition-colors shadow-xs reveal">
+          <div class="w-12 h-12 rounded-xl bg-emerald-100 text-brand-700 flex items-center justify-center shrink-0 shadow-xs">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-bold text-slate-900 text-lg mb-1">পারিবারিক সান্নিধ্য ও সাক্ষাৎ</h4>
+            <p class="text-slate-600 text-sm leading-relaxed">নির্ধারিত নিয়মে পরিবারের সঙ্গে নিয়মিত সাক্ষাৎ ও পারস্পরিক আস্থার বন্ধন জোরদার।</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== DAILY ROUTINE & HEALING SCHEDULE (সুশৃঙ্খল ও ইতিবাচক দিনলিপি) ==================== -->
+  <section id="daily-schedule" class="py-16 lg:py-24 bg-white border-b border-emerald-100 relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-900 bg-emerald-100/90 border border-emerald-300 px-4 py-1.5 rounded-full shadow-2xs">
+          সুশৃঙ্খল জীবনধারা
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
+          স্বপ্ন সাথী-তে রোগীর একটি সুশৃঙ্খল ও ইতিবাচক দিন
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          মাদকাসক্তি থেকে মুক্তির প্রধান স্তম্ভ হলো একটি সুশৃঙ্খল ও ইতিবাচক দৈনিক জীবনচর্চা। প্রতিটি রোগীকে প্রতিদিন ভালোবাসা, পুষ্টি ও বৈজ্ঞানিক সময়সূচির মধ্যে সুস্থ করে তোলা হয়:
+        </p>
+      </div>
+
+      <!-- Schedule Timeline Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        
+        <!-- Slot 1 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০৬:৩০ AM
+              </span>
+              <span class="text-xl">🌅</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">প্রাতঃজাগরণ ও শরীরচর্চা</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              সকালের নির্মল বাতাসে হালকা হাঁটাহাঁটি, শ্বাস-প্রশ্বাসের ব্যায়াম ও শরীরের ক্লান্তি কাটানোর হালকা স্ট্রেচিং।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            শারীরিক সুস্থতা ও সতেজতা
+          </div>
+        </div>
+
+        <!-- Slot 2 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০৮:৩০ AM
+              </span>
+              <span class="text-xl">🥣</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">সুষম পুষ্টিকর প্রাতঃরাশ</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              ডিম, দুধ, রুটি, মৌসুমি ফল ও পুষ্টিকর নাশতা যা রোগ প্রতিরোধ ক্ষমতা বাড়াতে সাহায্য করে।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            পর্যাপ্ত পুষ্টি ও শক্তি
+          </div>
+        </div>
+
+        <!-- Slot 3 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০৯:৩০ AM
+              </span>
+              <span class="text-xl">🧘</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">মেডিটেশন ও মন নিয়ন্ত্রণ</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              মাইন্ডফুলনেস মেডিটেশন ও গভীর নিঃশ্বাসের চর্চা যা মস্তিষ্কের অস্থিরতা ও অস্থির অনুভূতি প্রশমিত করে।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            মানসিক স্থিরতা ও একাগ্রতা
+          </div>
+        </div>
+
+        <!-- Slot 4 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ১১:০০ AM
+              </span>
+              <span class="text-xl">🩺</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">চিকিৎসক রাউন্ড ও ক্লাস</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              ডাক্তারের শারীরিক স্বাস্থ্য পরীক্ষা, ভাইটাল মনিটরিং এবং মোটিভেশনাল জীবনমুখী ক্লাস সেশন।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            স্বাস্থ্য নিরীক্ষা ও সচেতনতা
+          </div>
+        </div>
+
+        <!-- Slot 5 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০১:৩০ PM
+              </span>
+              <span class="text-xl">🍲</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">দুপুরের আহার ও বিশ্রাম</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              স্বাস্থ্যকর উপাদানে রান্না করা দেশীয় পুষ্টিকর দুপুরের খাবার গ্রহণ এবং প্রয়োজনীয় কায়িক বিশ্রাম।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            সুস্থ হজম ও বিশ্রাম
+          </div>
+        </div>
+
+        <!-- Slot 6 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০৪:৩০ PM
+              </span>
+              <span class="text-xl">🎲</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">ইনডোর খেলা ও বিনোদন</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              ক্যারম, দাবা, গঠনমূলক বই পড়া ও সহমর্মী বন্ধুদের সাথে পারস্পরিক অভিজ্ঞতা ভাগ করে নেওয়া।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            মানসিক প্রফুল্লতা ও বন্ধুত্ব
+          </div>
+        </div>
+
+        <!-- Slot 7 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০৭:০০ PM
+              </span>
+              <span class="text-xl">📖</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">নৈতিক ও আধ্যাত্মিক পাঠ</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              ধর্মীয় অনুশাসন পালন, নৈতিক মূল্যবোধ ও আত্মোপলব্ধি সেশন যা ভেতরের সুপ্ত শুভ চেতনা জাগিয়ে তোলে।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            আত্মিক শান্তি ও সংকল্প
+          </div>
+        </div>
+
+        <!-- Slot 8 -->
+        <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200/80 hover:border-emerald-300 hover:bg-emerald-50/40 transition-all shadow-2xs reveal flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-2.5 py-1 rounded-lg bg-emerald-100 text-emerald-950 font-bold text-xs schedule-time-badge">
+                ০৯:৩০ PM
+              </span>
+              <span class="text-xl">🌙</span>
+            </div>
+            <h4 class="font-bold text-slate-900 text-base mb-1.5">রাতের খাবার ও প্রশান্ত নিদ্রা</h4>
+            <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+              হালকা ও সহজে হজমযোগ্য রাতের আহার গ্রহণ এবং স্বাস্থ্যসম্মত সময়ে গভীর ও প্রশান্তিময় ঘুম।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-200/60 text-[11px] font-semibold text-emerald-800">
+            মস্তিষ্কের প্রাকৃতিক পুনর্জন্ম
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Family Assurance Strip -->
+      <div class="mt-10 p-6 rounded-2xl bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50 border border-emerald-200 text-center reveal">
+        <p class="text-slate-800 font-bold text-sm sm:text-base">
+          💙 "একটি পরিবার যেভাবে স্নেহে সন্তানকে গড়ে তোলে, ঠিক তেমনই আদর ও শৃঙ্খলায় পরিচালিত হয় আমাদের প্রতিটি দিন।"
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== REAL GALLERY SECTION WITH USER'S AUTHENTIC PHOTOS ==================== -->
+  <section id="gallery" class="py-16 lg:py-24 bg-slate-50 border-b border-emerald-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-800 bg-brand-100 px-3.5 py-1.5 rounded-full">
+          বাস্তব চিত্র ও গ্যালারি
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900">
+          আমাদের প্রতিষ্ঠানের অভ্যন্তরীণ পরিবেশ
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          নিচে কেন্দ্রের বাস্তব ছবিগুলো দেওয়া হলো। বড় করে দেখতে যেকোনো ছবির ওপর ক্লিক করুন।
+        </p>
+      </div>
+
+      <!-- Real Photo Gallery Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+        
+        <!-- Real Image 1: Building Front Banner -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-xs border-2 border-white bg-white cursor-pointer gallery-item reveal" 
+             data-img="https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png"
+             data-caption="স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র — ভবনের সম্মুখ ব্যানার (মনিপাড়া ভবন, খরমপুর, শেরপুর)">
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.ibb.co.com/jZzCh2nL/42-F5-DF2-F-2-EBE-46-DC-85-EF-77-D54-ED07-F93.png" 
+              alt="প্রতিষ্ঠানের ভবনের সামনের ব্যানার" 
+              referrerpolicy="no-referrer"
+              width="1200" height="700"
+              decoding="async"
+              fetchpriority="low"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4 bg-white border-t border-slate-100">
+            <span class="text-xs font-bold text-brand-700 block mb-1">কেন্দ্রের সম্মুখভাগ</span>
+            <h4 class="font-bold text-slate-900 text-base">ভবনের সম্মুখ ব্যানার ও পরিচিতি</h4>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+              <span>ক্লিক করে বড় করে দেখুন</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Real Image 2: Bed Room -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-xs border-2 border-white bg-white cursor-pointer gallery-item reveal" 
+             data-img="https://i.ibb.co.com/mVBgTm05/IMG-4375.jpg"
+             data-caption="সুসজ্জিত ও স্বাস্থ্যকর বেড রুম (আবাসন ব্যবস্থা)">
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.ibb.co.com/mVBgTm05/IMG-4375.jpg" 
+              alt="বেড রুম এর ছবি" 
+              referrerpolicy="no-referrer"
+              width="800" height="600"
+              decoding="async"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4 bg-white border-t border-slate-100">
+            <span class="text-xs font-bold text-brand-700 block mb-1">আবাসন সুবিধা</span>
+            <h4 class="font-bold text-slate-900 text-base">পরিচ্ছন্ন ও স্বাস্থ্যকর বেড রুম</h4>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+              <span>ক্লিক করে বড় করে দেখুন</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Real Image 3: Office Room -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-xs border-2 border-white bg-white cursor-pointer gallery-item reveal" 
+             data-img="https://i.ibb.co.com/TDz0dyxZ/IMG-3714.jpg"
+             data-caption="প্রশাসনিক অফিস ও প্রাথমিক কাউন্সেলিং রুম">
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.ibb.co.com/TDz0dyxZ/IMG-3714.jpg" 
+              alt="অফিস রুম এর ছবি" 
+              referrerpolicy="no-referrer"
+              width="800" height="600"
+              decoding="async"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4 bg-white border-t border-slate-100">
+            <span class="text-xs font-bold text-brand-700 block mb-1">প্রশাসনিক শাখা</span>
+            <h4 class="font-bold text-slate-900 text-base">অফিস ও কাউন্সেলিং রুম</h4>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+              <span>ক্লিক করে বড় করে দেখুন</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Real Image 4: TV Room -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-xs border-2 border-white bg-white cursor-pointer gallery-item reveal" 
+             data-img="https://i.ibb.co.com/TBBScsdc/IMG-4373.jpg"
+             data-caption="টিভি রুম — সুস্থ বিনোদন ও বিশ্রাম কর্নার">
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.ibb.co.com/TBBScsdc/IMG-4373.jpg" 
+              alt="টিভি রুম এর ছবি" 
+              referrerpolicy="no-referrer"
+              width="800" height="600"
+              decoding="async"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4 bg-white border-t border-slate-100">
+            <span class="text-xs font-bold text-brand-700 block mb-1">বিনোদন কর্নার</span>
+            <h4 class="font-bold text-slate-900 text-base">টিভি ও বিশ্রাম রুম</h4>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+              <span>ক্লিক করে বড় করে দেখুন</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Real Image 5: Classroom and Physical Exercise Room -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-xs border-2 border-white bg-white cursor-pointer gallery-item reveal" 
+             data-img="https://i.ibb.co.com/BHG2tkZ6/3896-F894-8-C39-4711-9-E44-FFEC62-AF9-F8-B.png"
+             data-caption="ক্লাস রুম এবং শারীরিক চর্চা ও যোগব্যায়াম রুম">
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.ibb.co.com/BHG2tkZ6/3896-F894-8-C39-4711-9-E44-FFEC62-AF9-F8-B.png" 
+              alt="ক্লাস রুম এবং শারীরিক চর্চা রুম" 
+              referrerpolicy="no-referrer"
+              width="800" height="600"
+              decoding="async"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4 bg-white border-t border-slate-100">
+            <span class="text-xs font-bold text-brand-700 block mb-1">শারীরিক চর্চা ও ফিটনেস</span>
+            <h4 class="font-bold text-slate-900 text-base">ক্লাস রুম ও শারীরিক চর্চা রুম</h4>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+              <span>ক্লিক করে বড় করে দেখুন</span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Real Image 6: Kitchen Room -->
+        <div class="group relative rounded-3xl overflow-hidden shadow-xs border-2 border-white bg-white cursor-pointer gallery-item reveal" 
+             data-img="https://i.ibb.co.com/KjLRdBxZ/IMG-4372.jpg"
+             data-caption="স্বাস্থ্যসম্মত রান্নাঘর ও পুষ্টিকর খাবার তৈরির পরিবেশ">
+          <div class="overflow-hidden">
+            <img 
+              src="https://i.ibb.co.com/KjLRdBxZ/IMG-4372.jpg" 
+              alt="কিচেন রুম এর ছবি" 
+              referrerpolicy="no-referrer"
+              width="800" height="600"
+              decoding="async"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+              loading="lazy"
+            />
+          </div>
+          <div class="p-4 bg-white border-t border-slate-100">
+            <span class="text-xs font-bold text-brand-700 block mb-1">পুষ্টি ও স্বাস্থ্য</span>
+            <h4 class="font-bold text-slate-900 text-base">পরিচ্ছন্ন কিচেন রুম</h4>
+            <p class="text-xs text-slate-500 mt-1 flex items-center gap-1.5 font-medium">
+              <svg class="w-3.5 h-3.5 text-brand-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v6m3-3H7"></path>
+              </svg>
+              <span>ক্লিক করে বড় করে দেখুন</span>
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox Modal Container -->
+  <div id="galleryLightbox" class="fixed inset-0 z-50 flex items-center justify-center bg-black/92 p-4 hidden-modal" role="dialog" aria-modal="true" aria-label="ছবির বিস্তারিত">
+    <button id="closeLightbox" class="absolute top-4 right-4 text-white hover:text-emerald-400 p-3 rounded-full bg-slate-800/80 focus:outline-none transition-colors" aria-label="বন্ধ করুন">
+      <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+    
+    <div class="max-w-4xl w-full flex flex-col items-center">
+      <img id="lightboxImg" src="" alt="বড় ছবি" class="max-h-[80vh] w-auto max-w-full rounded-2xl shadow-2xl object-contain border-2 border-slate-700" />
+      <p id="lightboxCaption" class="mt-4 text-white text-base text-center font-semibold bg-slate-900/90 px-6 py-2.5 rounded-full border border-slate-700"></p>
+    </div>
+  </div>
+
+  <!-- ==================== DIRECTOR SECTION (REAL DIRECTOR PHOTO & OFFICIAL STATEMENT) ==================== -->
+  <section id="director" class="py-16 lg:py-24 bg-white border-b border-emerald-100 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="relative overflow-hidden p-8 sm:p-12 rounded-3xl bg-gradient-to-br from-emerald-50/90 via-white to-amber-50/50 border-2 border-emerald-300 shadow-xl reveal">
+        <!-- Watermark Quote Decoration -->
+        <div class="absolute -right-4 -bottom-8 text-emerald-900/5 select-none pointer-events-none text-9xl font-serif leading-none" aria-hidden="true">“</div>
+        <div class="ambient-glow w-64 h-64 bg-emerald-300/20 top-0 right-0"></div>
+
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center relative z-10">
+          
+          <!-- Real Photo of Director: Amir Abu Sufian (Moni) -->
+          <div class="md:col-span-4 flex flex-col items-center text-center">
+            <div class="relative w-44 h-44 sm:w-52 sm:h-52 rounded-3xl overflow-hidden border-4 border-white shadow-2xl bg-slate-100">
+              <img 
+                src="https://i.ibb.co.com/hxX1Zb2r/B8036412-D58-A-4524-BE49-47-B9857-A6-D3-D.png" 
+                alt="আমির আবু সুফিয়ান (মনি) - পরিচালক, স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র" 
+                referrerpolicy="no-referrer"
+                width="600" height="600"
+                decoding="async"
+                class="w-full h-full object-cover object-top"
+                loading="lazy"
+              />
+            </div>
+            <div class="mt-4 space-y-1">
+              <h4 class="text-xl font-bold text-slate-900">আমির আবু সুফিয়ান (মনি)</h4>
+              <p class="text-sm font-bold text-brand-700">প্রতিষ্ঠাতা ও পরিচালক</p>
+              <p class="text-xs text-slate-600 font-medium">স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র</p>
+              <div class="pt-1.5">
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-300 shadow-2xs">
+                  <svg class="w-3.5 h-3.5 text-emerald-700" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                  </svg>
+                  রেজিঃ নং- শেরপুর-০৪
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Director's Authentic Message -->
+          <div class="md:col-span-8 space-y-4 text-center md:text-left">
+            <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold uppercase tracking-wider border border-emerald-300">
+              <span>পরিচালকের বক্তব্য</span>
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl font-extrabold text-slate-900 leading-snug">
+              “মাদকাসক্তি জীবনের সমাপ্তি নয় — সঠিক চিকিৎসা, মমতা ও পারিবারিক আস্থাই ফিরিয়ে দেয় সুন্দর স্বাভাবিক ভবিষ্যৎ”
+            </h3>
+
+            <blockquote class="text-slate-700 text-base sm:text-lg leading-relaxed border-l-4 border-brand-600 pl-4 py-2 bg-emerald-50/60 rounded-r-xl border border-emerald-100">
+              “মাদকাসক্তি একজন মানুষের মেধা ও ভবিষ্যৎ সম্ভাবনাকে সাময়িকভাবে ম্লান করতে পারে, কিন্তু এটি তার জীবনের সমাপ্তি নয়। আক্রান্ত মানুষকে দোষারোপ কিংবা সমাজ থেকে বিচ্ছিন্ন না করে সময়মতো বিজ্ঞানসম্মত চিকিৎসার আওতায় আনাই আরোগ্যের প্রথম শর্ত। স্বপ্ন সাথী পরিবারে আমরা প্রতিটি সেবাপ্রত্যাশীর মানবিক মর্যাদা, সর্বোচ্চ নিরাপত্তা ও শতভাগ ব্যক্তিগত গোপনীয়তা রক্ষা করে দায়িত্বশীল চিকিৎসা ও মানসিক রূপান্তর নিশ্চিত করি। আমাদের বিশ্বাস—সবার আন্তরিক সহযোগিতায় প্রতিটি মানুষ সমাজে মাথা উঁচু করে নতুন জীবন শুরু করতে সক্ষম।”
+            </blockquote>
+
+            <div class="pt-2 flex flex-wrap items-center justify-center md:justify-start gap-3.5">
+              <a href="tel:+8801712490208" class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md hover:shadow-lg transition-all active:scale-95">
+                <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+                <span>সরাসরি কথা বলুন: ০১৭১২-৪৯০২০৮</span>
+              </a>
+
+              <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%B2%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%AA%E0%A6%B0%E0%A6%BF%E0%A6%9A%E0%A6%BE%E0%A6%B2%E0%A6%95%20%E0%A6%AE%E0%A6%B9%E0%A7%8B%E0%A6%A6%E0%A6%AF%E0%A6%BC%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%87%20%E0%A6%AA%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A7%8D%E0%A6%B6%20%E0%A6%95%E0%A6%B0%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-5 py-3.5 rounded-xl bg-emerald-800 hover:bg-emerald-900 text-white font-bold text-sm shadow-sm hover:shadow-md transition-all active:scale-95">
+                <svg class="w-4 h-4 fill-current text-emerald-300" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+                </svg>
+                <span>হোয়াটসঅ্যাপ</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FAMILY TESTIMONIALS (সুস্থ হয়ে ফেরা পরিবারদের আস্থা ও বাস্তব অনুভূতি) ==================== -->
+  <section id="testimonials" class="py-16 lg:py-24 bg-gradient-to-b from-white via-emerald-50/30 to-white border-b border-emerald-100 relative overflow-hidden">
+    <div class="ambient-glow w-96 h-96 bg-emerald-200/20 top-10 -right-20"></div>
+    <div class="ambient-glow w-80 h-80 bg-amber-200/20 bottom-10 -left-20"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-900 bg-emerald-100/90 border border-emerald-300 px-4 py-1.5 rounded-full shadow-2xs">
+          পরিবারের বাস্তব অভিজ্ঞতা
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
+          সুস্থ হয়ে ফেরা পরিবারদের আস্থা ও আন্তরিক অনুভূতি
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          প্রতিটি আরোগ্য আমাদের কাছে এক একটি অমূল্য বিজয়। স্বপ্ন সাথী কেন্দ্রে চিকিৎসা নিয়ে স্বাভাবিক জীবনে ফেরা মানুষ ও তাদের স্বজনদের কিছু অভিজ্ঞতা:
+        </p>
+      </div>
+
+      <!-- Testimonials Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 items-stretch">
+        
+        <!-- Story 1 -->
+        <div class="p-7 rounded-3xl bg-white border border-emerald-200/90 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-amber-500 text-sm tracking-wide">
+                ★★★★★
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-200">
+                সম্পূর্ণ আরোগ্য
+              </span>
+            </div>
+
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+              “আমার ছোট ভাইয়ের ভবিষ্যৎ নিয়ে আমরা পুরো পরিবার দিশেহারা হয়ে পড়েছিলাম। শেরপুরে স্বপ্ন সাথী কেন্দ্রে এসে চিকিৎসকদের মমতা ও নিয়মতান্ত্রিক চিকিৎসা দেখে ভরসা পাই। আজ ও সম্পূর্ণ সুস্থ, নতুনভাবে ব্যবসায় মনোযোগ দিয়েছে।”
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-base shadow-xs">
+              আ
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">আনোয়ার হোসেন</h4>
+              <p class="text-xs text-slate-500 font-medium">রোগীর বড় ভাই • শেরপুর সদর</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 2 -->
+        <div class="p-7 rounded-3xl bg-white border border-emerald-200/90 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-amber-500 text-sm tracking-wide">
+                ★★★★★
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-200">
+                সহমর্মী সেবা
+              </span>
+            </div>
+
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+              “ভর্তির আগে সবচেয়ে বড় ভয় ছিল—ওখানে কোনো মারধর বা কষ্ট দেওয়া হবে কিনা। স্বপ্ন সাথীর পরিচালক মনি ভাই প্রথম দিনই অভয় দিয়েছিলেন। এখানে অত্যন্ত যত্ন ও মানবিক সম্মানের সাথে চিকিৎসা দেওয়া হয়। তাদের কাছে আমরা কৃতজ্ঞ।”
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-brand-700 text-white font-bold flex items-center justify-center text-base shadow-xs">
+              র
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">রাশেদুল হাসান</h4>
+              <p class="text-xs text-slate-500 font-medium">রোগীর অভিভাবক • নালিতাবাড়ী, শেরপুর</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Story 3 -->
+        <div class="p-7 rounded-3xl bg-white border border-emerald-200/90 shadow-md hover:shadow-xl transition-all duration-300 flex flex-col justify-between reveal">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <div class="flex items-center text-amber-500 text-sm tracking-wide">
+                ★★★★★
+              </div>
+              <span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-bold border border-emerald-200">
+                নতুন জীবন
+              </span>
+            </div>
+
+            <p class="text-slate-700 text-sm sm:text-base leading-relaxed italic">
+              “মাদকাসক্তি যে একটি নিরাময়যোগ্য মানসিক ও শারীরিক ব্যাধি, তা এখানে কাউন্সেলিং নেওয়ার পর উপলব্ধি করতে পারি। সুশৃঙ্খল রুটিন, নামাজ ও শরীরচর্চার মধ্য দিয়ে আমার ছেলেটি নতুন মানুষ হয়ে ঘরে ফিরেছে।”
+            </p>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-100 flex items-center gap-3.5">
+            <div class="w-11 h-11 rounded-full bg-teal-700 text-white font-bold flex items-center justify-center text-base shadow-xs">
+              শ
+            </div>
+            <div>
+              <h4 class="text-sm font-bold text-slate-900">শাহীনুর পারভীন</h4>
+              <p class="text-xs text-slate-500 font-medium">সন্তানের মা • জামালপুর</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Trust Assurance Box -->
+      <div class="mt-10 p-5 rounded-2xl bg-emerald-100/70 border border-emerald-300 text-center max-w-2xl mx-auto text-xs sm:text-sm text-emerald-950 font-medium reveal">
+        <span class="font-bold text-emerald-900">🔒 শতভাগ ব্যক্তিগত সুরক্ষা:</span> চিকিৎসা গ্রহণকারী প্রতিটি রোগীর ছবি ও পারিবারিক নাম কঠোরভাবে সংরক্ষিত রাখা হয়।
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== ADMISSION CHECKLIST (ভর্তির সময় পরিবারের প্রয়োজনীয় প্রস্তুতি ও নির্দেশিকা) ==================== -->
+  <section id="admission-checklist" class="py-16 lg:py-24 bg-white border-b border-emerald-100 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-900 bg-emerald-100/90 border border-emerald-300 px-4 py-1.5 rounded-full shadow-2xs">
+          পরিবারের স্পষ্ট গাইড
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 leading-snug">
+          রোগী ভর্তির সময় পরিবারের করণীয় ও প্রয়োজনীয় নথিপত্র
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+          ঝামেলামুক্ত ও দ্রুত ভর্তির মাধ্যমে রোগীকে যত দ্রুত সম্ভব বিশেষজ্ঞ তত্ত্বাবধানে নেওয়া আমাদের অগ্রাধিকার:
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-stretch">
+        
+        <!-- Step 1 -->
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border-2 border-emerald-200/80 shadow-xs flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm shadow-xs">
+              ০১
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">প্রাথমিক যোগাযোগ ও স্লট নিশ্চিতকরণ</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              সরাসরি হটলাইন <a href="tel:+8801712490208" class="text-brand-700 font-bold underline">০১৭১২-৪৯০২০৮</a> এ কল করে রোগীর শারীরিক ও মানসিক অবস্থা জানান। ২৪/৭ পরামর্শ সেবা চালু রয়েছে।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-200/60 text-[11px] font-semibold text-emerald-800">
+            ✓ তাৎক্ষণিক রেসপন্স
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border-2 border-emerald-200/80 shadow-xs flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm shadow-xs">
+              ০২
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">প্রয়োজনীয় নথিপত্র ও তথ্য</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              রোগীর জাতীয় পরিচয়পত্র / জন্মনিবন্ধন কপি, অভিভাবকের পরিচয়পত্র এবং রোগীর পূর্ববর্তী কোনো জটিল প্রেসক্রিপশন থাকলে সাথে আনুন।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-200/60 text-[11px] font-semibold text-emerald-800">
+            ✓ মাত্র ২টি সাধারণ নথি
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border-2 border-emerald-200/80 shadow-xs flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm shadow-xs">
+              ০৩
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">প্রাথমিক স্বাস্থ্য পরীক্ষা ও কাউন্সেলিং</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              কেন্দ্রে পৌঁছানোর সাথে সাথে বিশেষজ্ঞ চিকিৎসক শারীরিক পরীক্ষা করেন এবং অভিজ্ঞ কাউন্সেলর রোগীকে মানসিক আস্থা প্রদান করেন।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-200/60 text-[11px] font-semibold text-emerald-800">
+            ✓ কোনো বলপ্রয়োগ নয়
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-6 rounded-2xl bg-emerald-50/50 border-2 border-emerald-200/80 shadow-xs flex flex-col justify-between reveal">
+          <div class="space-y-3">
+            <div class="w-10 h-10 rounded-xl bg-brand-600 text-white font-bold flex items-center justify-center text-sm shadow-xs">
+              ০৪
+            </div>
+            <h3 class="text-lg font-bold text-slate-900">নিয়মিত পারিবারিক সাক্ষাৎ ও অগ্রগতি</h3>
+            <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+              চিকিৎসা চলাকালীন অভিভাবক নিয়মিত চিকিৎসকের সাথে কথা বলতে পারেন এবং নির্ধারিত দিনে রোগীকে দেখতে আসার পূর্ণ সুযোগ থাকে।
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-emerald-200/60 text-[11px] font-semibold text-emerald-800">
+            ✓ পারিবারিক স্বচ্ছতা
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Emergency transport callout -->
+      <div class="mt-10 p-6 rounded-3xl bg-gradient-to-r from-emerald-900 to-brand-950 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-xl reveal">
+        <div class="space-y-1 text-center sm:text-left">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400 text-amber-950 font-bold text-xs">
+            🚑 জরুরি বিশেষ সুবিধা
+          </div>
+          <h4 class="text-lg sm:text-xl font-bold text-white">রোগীকে বাড়ি থেকে কেন্দ্রে নিয়ে আসতে বিশেষ সহায়তা চান?</h4>
+          <p class="text-emerald-200 text-xs sm:text-sm">অভিজ্ঞ ও প্রশিক্ষণপ্রাপ্ত সেবাদাতা দলের মাধ্যমে নিরাপদ ও সহমর্মী রোগী পরিবহন নিশ্চিত করা হয়।</p>
+        </div>
+        <a href="tel:+8801712490208" class="shrink-0 px-6 py-3.5 rounded-xl bg-white hover:bg-emerald-50 text-emerald-950 font-bold text-sm shadow-md transition-all active:scale-95 flex items-center gap-2">
+          <svg class="w-4 h-4 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>সহায়তা নিন: ০১৭১২-৪৯০২০৮</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <section id="faq" class="py-16 lg:py-24 section-mesh-sage border-b border-emerald-100 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-800 bg-brand-100 px-4 py-1.5 rounded-full border border-brand-200">
+          জিজ্ঞাসা ও সমাধান
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900">
+          সাধারণ জিজ্ঞাসা
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg max-w-2xl mx-auto">
+          মাদকাসক্তি নিরাময় প্রক্রিয়ায় পরিবার ও স্বজনদের সাধারণ কিছু প্রশ্নের দায়িত্বশীল উত্তর:
+        </p>
+      </div>
+
+      <!-- Accordion List -->
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- Question 1 -->
+        <div class="border border-slate-200/90 rounded-2xl bg-white overflow-hidden shadow-xs reveal">
+          <button type="button" class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none hover:bg-emerald-50/50 transition-colors" aria-expanded="false">
+            <span class="font-bold text-slate-900 text-base sm:text-lg">
+              মাদকাসক্ত ব্যক্তিকে কীভাবে সাহায্য করা যায়?
+            </span>
+            <span class="faq-chevron w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-5 sm:px-6 pb-6 text-slate-600 text-base leading-relaxed border-t border-slate-100 pt-4">
+            তাকে অপরাধী হিসেবে না দেখে একজন অসুস্থ মানুষ হিসেবে বিবেচনা করতে হবে। পারিবারিক কলহ বা কটূক্তি পরিহার করে সহমর্মিতার সাথে স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্রের সহায়তা গ্রহণ করাই সবচেয়ে দায়িত্বশীল ও কার্যকর পদক্ষেপ।
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="border border-slate-200/90 rounded-2xl bg-white overflow-hidden shadow-xs reveal">
+          <button type="button" class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none hover:bg-emerald-50/50 transition-colors" aria-expanded="false">
+            <span class="font-bold text-slate-900 text-base sm:text-lg">
+              পরিবারের সদস্য কি আগে যোগাযোগ করতে পারবেন?
+            </span>
+            <span class="faq-chevron w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-5 sm:px-6 pb-6 text-slate-600 text-base leading-relaxed border-t border-slate-100 pt-4">
+            হ্যাঁ, অবশ্যই। অনেক সময় আক্রান্ত ব্যক্তি চিকিৎসা নিতে অস্বীকৃতি জানান। সে ক্ষেত্রে পরিবারের সদস্যরা আগেই আমাদের সঙ্গে যোগাযোগ করে করণীয়, রোগীকে উদ্বুদ্ধ করার প্রক্রিয়া ও সার্বিক বিষয়াদি জেনে নিতে পারেন।
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="border border-slate-200/90 rounded-2xl bg-white overflow-hidden shadow-xs reveal">
+          <button type="button" class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none hover:bg-emerald-50/50 transition-colors" aria-expanded="false">
+            <span class="font-bold text-slate-900 text-base sm:text-lg">
+              কাউন্সেলিং কেন গুরুত্বপূর্ণ?
+            </span>
+            <span class="faq-chevron w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-5 sm:px-6 pb-6 text-slate-600 text-base leading-relaxed border-t border-slate-100 pt-4">
+            মাদকাসক্তি মূলত শারীরিক ও মানসিক নির্ভরতা। কাউন্সেলিংয়ের মাধ্যমে ব্যক্তির গভীর মানসিক কারণ, মানসিক চাপ ও হতাশা দূর করে ইতিবাচক চিন্তাধারা ও স্বাভাবিক জীবনের প্রতি আত্মবিশ্বাস গড়ে তোলা হয়।
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="border border-slate-200/90 rounded-2xl bg-white overflow-hidden shadow-xs reveal">
+          <button type="button" class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none hover:bg-emerald-50/50 transition-colors" aria-expanded="false">
+            <span class="font-bold text-slate-900 text-base sm:text-lg">
+              নিরাময় ও সুস্থতার পথে পরিবারের ভূমিকা কী?
+            </span>
+            <span class="faq-chevron w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-5 sm:px-6 pb-6 text-slate-600 text-base leading-relaxed border-t border-slate-100 pt-4">
+            পরিবারের মানসিক সমর্থন ও ধৈর্য রোগীর সুস্থতা ও দীর্ঘমেয়াদী নিরাময়ের সবচেয়ে বড় ভিত্তি। চিকিৎসার পর রোগীকে নতুন করে দোষারোপ না করে তাকে ভালোবাসা দেওয়া এবং স্বাভাবিক সামাজিক কার্যক্রমে অন্তর্ভুক্ত করা জরুরি।
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="border border-slate-200/90 rounded-2xl bg-white overflow-hidden shadow-xs reveal">
+          <button type="button" class="faq-btn w-full p-5 sm:p-6 text-left flex justify-between items-center gap-4 focus:outline-none hover:bg-emerald-50/50 transition-colors" aria-expanded="false">
+            <span class="font-bold text-slate-900 text-base sm:text-lg">
+              প্রতিষ্ঠানের সঙ্গে কীভাবে যোগাযোগ করব?
+            </span>
+            <span class="faq-chevron w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center shrink-0 text-slate-600 font-bold">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M19 9l-7 7-7-7"></path>
+              </svg>
+            </span>
+          </button>
+          <div class="faq-answer px-5 sm:px-6 pb-6 text-slate-600 text-base leading-relaxed border-t border-slate-100 pt-4">
+            আমাদের হটলাইন <strong>০১৭১২-৪৯০২০৮</strong> অথবা <strong>০১৯৪৮-৮৫৫২০৮</strong> নম্বরে সরাসরি ফোন করতে পারেন, ই-মেইল করতে পারেন <strong>sopnosathi.info@gmail.com</strong> ঠিকানায়, অথবা সরাসরি শেরপুর টাউনের খরমপুরের মনিপাড়া ভবনে এসে কথা বলতে পারেন।
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== PRIVACY SECTION ==================== -->
+  <section class="py-12 bg-gradient-to-r from-emerald-950 via-slate-900 to-emerald-950 text-white border-y border-emerald-900">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center gap-6 p-7 sm:p-8 rounded-3xl bg-emerald-900/40 border border-emerald-800/80 shadow-inner reveal">
+        <div class="w-16 h-16 rounded-2xl bg-emerald-800/90 flex items-center justify-center text-emerald-300 shrink-0 shadow-sm">
+          <svg class="w-9 h-9" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+          </svg>
+        </div>
+        <div class="space-y-2 text-center sm:text-left">
+          <h3 class="text-xl sm:text-2xl font-bold text-white">
+            আপনার গোপনীয়তা আমাদের কাছে গুরুত্বপূর্ণ
+          </h3>
+          <p class="text-emerald-100 text-sm sm:text-base leading-relaxed">
+            যোগাযোগের সময় ব্যক্তিগত তথ্য শেয়ার করার ক্ষেত্রে প্রয়োজনীয় সতর্কতা অবলম্বন করুন। রোগী ও পরিবারের ব্যক্তিগত বিষয়কে সম্মানের সঙ্গে বিবেচনা করা হবে।
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CONTACT SECTION & FORM ==================== -->
+  <section id="contact" class="py-16 lg:py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="max-w-3xl mx-auto text-center space-y-3 mb-14 reveal">
+        <span class="text-xs sm:text-sm font-bold tracking-wide uppercase text-brand-700 bg-brand-50 px-3.5 py-1.5 rounded-full border border-brand-200">
+          সরাসরি যোগাযোগ
+        </span>
+        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900">
+          প্রয়োজনে আজই যোগাযোগ করুন
+        </h2>
+        <p class="text-slate-600 text-base sm:text-lg">
+          আমরা সার্বক্ষণিক আপনার ও আপনার পরিবারের পাশে আছি। যেকোনো প্রশ্ন বা জরুরি পরামর্শে নির্দ্বিধায় কল করুন।
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12">
+        
+        <!-- Left: Contact Details Cards & Action Buttons -->
+        <div class="lg:col-span-6 space-y-6 reveal">
+          
+          <!-- Phone Cards -->
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 space-y-4 shadow-xs">
+            <h3 class="text-lg font-bold text-slate-900 flex items-center gap-2">
+              <span class="w-6 h-6 rounded-full bg-brand-100 text-brand-700 flex items-center justify-center text-xs">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+                </svg>
+              </span> 
+              <span>ফোন ও জরুরি হটলাইন নম্বর</span>
+            </h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <a href="tel:+8801712490208" class="p-4 rounded-2xl bg-white border border-slate-200 hover:border-brand-500 hover:shadow-xs transition-all flex items-center justify-between group">
+                <div>
+                  <span class="block text-xs text-slate-500 font-medium">হটলাইন ১ (পরিচালক)</span>
+                  <span class="block text-lg font-bold text-slate-900 group-hover:text-brand-600">০১৭১২-৪৯০২০৮</span>
+                </div>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-brand-100 text-brand-800 font-bold">কল</span>
+              </a>
+
+              <a href="tel:01948855208" class="p-4 rounded-2xl bg-white border border-slate-200 hover:border-brand-500 hover:shadow-xs transition-all flex items-center justify-between group">
+                <div>
+                  <span class="block text-xs text-slate-500 font-medium">হটলাইন ২ (অফিস)</span>
+                  <span class="block text-lg font-bold text-slate-900 group-hover:text-brand-600">০১৯৪৮-৮৫৫২০৮</span>
+                </div>
+                <span class="text-xs px-2.5 py-1 rounded-lg bg-slate-100 text-slate-800 font-bold">কল</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Email & Location Card -->
+          <div class="p-6 rounded-3xl bg-slate-50 border border-slate-200 space-y-4 shadow-xs">
+            <div>
+              <span class="text-xs text-slate-500 block font-medium">ই-মেইল যোগাযোগ</span>
+              <a href="mailto:sopnosathi.info@gmail.com" class="text-base font-bold text-brand-700 hover:underline">
+                sopnosathi.info@gmail.com
+              </a>
+            </div>
+            
+            <div class="pt-3 border-t border-slate-200">
+              <span class="text-xs text-slate-500 block font-medium">কেন্দ্রের ঠিকানা</span>
+              <p class="text-base font-bold text-slate-800 mt-0.5">
+                মনিপাড়া ভবন, খরমপুর, শেরপুর টাউন, শেরপুর।
+              </p>
+              <p class="text-xs text-slate-500 font-semibold mt-1">রেজিঃ নং- শেরপুর-০৪</p>
+            </div>
+          </div>
+
+          <!-- Action Buttons (কল করুন, হোয়াটসঅ্যাপ, ফেসবুক পেজ, গুগল ম্যাপ) -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+            <a href="tel:+8801712490208" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-xs sm:text-sm text-center shadow-xs transition-colors group">
+              <svg class="w-5 h-5 mb-1.5 text-emerald-200 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>সরাসরি কল</span>
+            </a>
+
+            <a href="https://wa.me/8801712490208?text=%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%80%20%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A6%95%E0%A6%BE%E0%A6%B8%E0%A6%95%E0%A7%8D%E0%A6%A4%E0%A6%BF%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%af%E0%A6%BC%20%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A7%87%20%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%20%E0%A6%AC%E0%A6%BE%20%E0%A6%AA%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%B0%E0%A7%8D%E0%A6%B6%E0%A7%87%E0%A6%B0%20%E0%A6%9C%E0%A6%A8%E0%A7%8D%E0%A6%AF%20%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97%20%E0%A6%95%E0%A6%B0%E0%A6%9B%E0%A6%BF%E0%A7%84" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] text-white font-bold text-xs sm:text-sm text-center shadow-xs transition-colors group">
+              <svg class="w-5 h-5 mb-1.5 fill-current text-white group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+              </svg>
+              <span>হোয়াটসঅ্যাপ</span>
+            </a>
+
+            <a href="https://www.facebook.com/share/1MEyDVFAAc/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#1877F2] hover:bg-[#166fe5] text-white font-bold text-xs sm:text-sm text-center shadow-xs transition-colors group">
+              <svg class="w-5 h-5 mb-1.5 fill-current text-white group-hover:scale-110 transition-transform" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span>ফেসবুক পেজ</span>
+            </a>
+
+            <a href="https://maps.app.goo.gl/mmJ8TfbsnMSWAe7z8?g_st=ic" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center p-3.5 rounded-2xl bg-[#EA4335] hover:bg-[#d9382b] text-white font-bold text-xs sm:text-sm text-center shadow-xs transition-colors group">
+              <svg class="w-5 h-5 mb-1.5 text-white group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>গুগল ম্যাপ</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right: Contact Form -->
+        <div class="lg:col-span-6 reveal">
+          <div class="p-6 sm:p-8 rounded-3xl bg-white border border-slate-200 shadow-lg">
+            <h3 class="text-xl font-bold text-slate-900 mb-1">বার্তা পাঠান</h3>
+            <p class="text-slate-500 text-sm mb-6">আপনার যেকোনো প্রশ্ন বা বার্তা লিখে পাঠান, আমরা দ্রুত যোগাযোগ করব।</p>
+
+            <!-- Success Alert Banner (Initially Hidden) -->
+            <div id="contactSuccessMsg" class="hidden mb-6 p-4 rounded-2xl bg-emerald-50 border border-emerald-300 text-emerald-900 text-sm space-y-1">
+              <div class="flex items-center gap-2 font-bold text-emerald-800">
+                <svg class="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                </svg>
+                <span>বার্তাটি সফলভাবে গৃহীত হয়েছে!</span>
+              </div>
+              <p class="text-xs text-emerald-700">
+                ধন্যবাদ। স্বপ্ন সাথী দলের প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবেন। যেকোনো জরুরি প্রয়োজনে সরাসরি <strong>০১৭১২-৪৯০২০৮</strong> নম্বরে কল করুন।
+              </p>
+            </div>
+
+            <!-- Interactive Form -->
+            <form id="contactForm" class="space-y-4">
+              <div>
+                <label for="userName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">নাম *</label>
+                <input 
+                  type="text" 
+                  id="userName" 
+                  name="name" 
+                  required 
+                  placeholder="আপনার নাম লিখুন" 
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-slate-800 text-sm outline-none transition-all"
+                />
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="userPhone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">মোবাইল নম্বর *</label>
+                  <input 
+                    type="tel" 
+                    id="userPhone" 
+                    name="phone" 
+                    required 
+                    placeholder="০১৭১২-XXXXXX" 
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-slate-800 text-sm outline-none transition-all"
+                  />
+                </div>
+
+                <div>
+                  <label for="userEmail" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">ই-মেইল</label>
+                  <input 
+                    type="email" 
+                    id="userEmail" 
+                    name="email" 
+                    placeholder="example@mail.com" 
+                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-slate-800 text-sm outline-none transition-all"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label for="userMessage" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">বার্তা *</label>
+                <textarea 
+                  id="userMessage" 
+                  name="message" 
+                  rows="4" 
+                  required 
+                  placeholder="আপনার বার্তা বা জিজ্ঞাসা লিখুন..." 
+                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:ring-2 focus:ring-brand-500 focus:border-brand-500 text-slate-800 text-sm outline-none transition-all resize-none"
+                ></textarea>
+              </div>
+
+              <button 
+                type="submit" 
+                id="submitBtn"
+                class="w-full py-4 px-6 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-base shadow-sm hover:shadow transition-all flex items-center justify-center gap-2 active:scale-98"
+              >
+                <span>বার্তা পাঠান</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+                </svg>
+              </button>
+            </form>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== FINAL CTA BANNER ==================== -->
+  <section class="py-16 lg:py-24 bg-gradient-to-r from-emerald-950 via-brand-950 to-emerald-950 text-white relative overflow-hidden">
+    <div class="ambient-glow w-96 h-96 bg-emerald-500/15 -top-20 -left-20"></div>
+    <div class="ambient-glow w-96 h-96 bg-amber-400/10 -bottom-20 -right-20"></div>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 space-y-6 reveal">
+      
+      <span class="inline-block px-4 py-1.5 rounded-full bg-emerald-800/90 text-emerald-200 text-xs sm:text-sm font-semibold border border-emerald-600 shadow-sm">
+        সুস্থ জীবনের নতুন সূচনা
+      </span>
+
+      <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+        “পরিবর্তনের সিদ্ধান্তটি আজই শুরু হতে পারে”
+      </h2>
+
+      <p class="text-emerald-100 text-base sm:text-xl font-normal max-w-2xl mx-auto leading-relaxed">
+        “মাদকাসক্তি একটি কঠিন বাস্তবতা হলেও সহায়তা চাওয়ার সিদ্ধান্ত হতে পারে সুস্থ জীবনের প্রথম পদক্ষেপ।”
+      </p>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contact" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-white text-emerald-950 hover:bg-emerald-50 font-bold text-base shadow-xl hover:shadow-2xl transition-all active:scale-95">
+          <span>আমাদের সঙ্গে যোগাযোগ করুন</span>
+          <svg class="w-5 h-5 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+          </svg>
+        </a>
+
+        <a href="tel:+8801712490208" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-xl bg-brand-700 hover:bg-brand-600 text-white font-bold text-base border border-emerald-500 shadow-md transition-all active:scale-95">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+          </svg>
+          <span>হটলাইন: ০১৭১২-৪৯০২০৮</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-slate-950 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Logo & Identity -->
+        <div class="lg:col-span-5 space-y-4">
+          <div class="flex items-center gap-3.5">
+            <img 
+              src="https://i.ibb.co.com/ZzMfxNdf/1-BB222-BC-D5-EE-4-D55-B548-45-F556-D2-E60-B.png" 
+              alt="স্বপ্ন সাথী লোগো" 
+              referrerpolicy="no-referrer"
+              width="48" height="48"
+              decoding="async"
+              loading="lazy"
+              fetchpriority="low"
+              class="w-12 h-12 rounded-xl object-contain bg-white p-0.5 border border-emerald-700 shadow"
+            />
+            <div>
+              <h3 class="text-lg font-bold text-white leading-tight">স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র</h3>
+              <p class="text-xs text-emerald-400 font-bold">রেজিঃ নং- শেরপুর-০৪</p>
+            </div>
+          </div>
+          <p class="text-sm text-slate-400 leading-relaxed max-w-sm">
+            একটি জীবনকে মাদকের অন্ধকার থেকে আলোর পথে ফিরিয়ে আনার যাত্রায় আমরা পরিবার ও প্রিয়জনদের পাশে থাকতে চাই।
+          </p>
+          <div class="text-xs text-slate-400 space-y-2 pt-1">
+            <p class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>ঠিকানা: মনিপাড়া ভবন, খরমপুর, শেরপুর টাউন, শেরপুর।</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+              </svg>
+              <span>হটলাইন: ০১৭১২-৪৯০২০৮, ০১৯৪৮-৮৫৫২০৮</span>
+            </p>
+            <p class="flex items-center gap-2">
+              <svg class="w-4 h-4 text-emerald-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+              </svg>
+              <span>ই-মেইল: <a href="mailto:sopnosathi.info@gmail.com" class="text-emerald-400 hover:underline">sopnosathi.info@gmail.com</a></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="lg:col-span-4 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">দ্রুত লিংক</h4>
+          <div class="grid grid-cols-2 gap-2 text-sm font-medium">
+            <a href="#home" class="hover:text-emerald-400 transition-colors">হোম</a>
+            <a href="#about" class="hover:text-emerald-400 transition-colors">আমাদের লক্ষ্য</a>
+            <a href="#services" class="hover:text-emerald-400 transition-colors">চিকিৎসা ও সেবা</a>
+            <a href="#facilities" class="hover:text-emerald-400 transition-colors">সুবিধাসমূহ</a>
+            <a href="#gallery" class="hover:text-emerald-400 transition-colors">বাস্তব চিত্র</a>
+            <a href="#director" class="hover:text-emerald-400 transition-colors">পরিচালকের বক্তব্য</a>
+            <a href="#faq" class="hover:text-emerald-400 transition-colors">সাধারণ জিজ্ঞাসা</a>
+            <a href="#contact" class="hover:text-emerald-400 transition-colors">যোগাযোগ</a>
+          </div>
+        </div>
+
+        <!-- Social & Direct Action -->
+        <div class="lg:col-span-3 space-y-4">
+          <h4 class="text-sm font-bold text-white uppercase tracking-wider">সামাজিক যোগাযোগ</h4>
+          <p class="text-xs text-slate-400">আমাদের অফিসিয়াল ফেসবুক পেজে যুক্ত থাকুন:</p>
+          <div>
+            <a href="https://www.facebook.com/share/1MEyDVFAAc/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-[#1877F2] text-white text-xs font-bold hover:bg-[#166fe5] transition-colors shadow-xs">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+              </svg>
+              <span>Facebook Page</span>
+            </a>
+          </div>
+          <div class="pt-2">
+            <a href="https://maps.app.goo.gl/mmJ8TfbsnMSWAe7z8?g_st=ic" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs text-emerald-400 hover:underline">
+              <svg class="w-4 h-4 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              </svg>
+              <span>গুগল ম্যাপে শেরপুর কেন্দ্র দেখুন ↗</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="pt-8 text-center text-xs text-slate-500">
+        <p>© ২০২৬ স্বপ্ন সাথী মাদকাসক্তি নিরাময় কেন্দ্র। সর্বস্বত্ব সংরক্ষিত।</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==================== FLOATING ACTION HUB (DESKTOP & TABLET) ==================== -->
+  <div class="fixed bottom-6 right-6 z-40 hidden sm:flex flex-col items-end gap-3 pointer-events-none">
+    
+    <!-- Floating WhatsApp Button with Pulse Ring -->
+    <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%BA%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%80%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%20%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%93%20%E0%A6%AD%E0%A6%B0%E0%A7%8D%E0%A6%A4%E0%A6%BF%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="group pointer-events-auto flex items-center gap-2.5 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs shadow-xl transition-all hover:scale-105 active:scale-95"
+       title="হোয়াটসঅ্যাপে সরাসরি মেসেজ করুন">
+      <span class="relative flex h-3 w-3">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-100"></span>
+      </span>
+      <svg class="w-4 h-4 fill-current text-white" viewBox="0 0 24 24">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+      </svg>
+      <span class="tracking-wide">হোয়াটসঅ্যাপে সাহায্য</span>
+    </a>
+
+    <!-- Scroll to Top Circular Progress Button -->
+    <button id="scrollToTopBtn" type="button" class="scroll-top-btn pointer-events-auto w-11 h-11 rounded-full bg-white text-slate-700 shadow-lg border border-slate-200 flex items-center justify-center transition-all hover:bg-emerald-50 hover:text-emerald-700 active:scale-95" aria-label="উপরে যান">
+      <svg class="progress-ring w-11 h-11 absolute inset-0 -rotate-90 pointer-events-none" viewBox="0 0 44 44">
+        <circle class="text-slate-100" stroke-width="2.5" stroke="currentColor" fill="transparent" r="19" cx="22" cy="22" />
+        <circle id="scrollProgressCircle" class="text-emerald-600 transition-all duration-150" stroke-width="2.5" stroke-dasharray="119.38" stroke-dashoffset="119.38" stroke-linecap="round" stroke="currentColor" fill="transparent" r="19" cx="22" cy="22" />
+      </svg>
+      <svg class="w-4 h-4 text-emerald-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 15l7-7 7 7"></path>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ==================== MOBILE STICKY CALL & CONTACT ACTION BAR ==================== -->
+  <div class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-white/95 backdrop-blur-md border-t border-slate-200 px-3 py-2.5 shadow-2xl">
+    <div class="grid grid-cols-3 gap-2 max-w-md mx-auto">
+      <a href="tel:+8801712490208" class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-brand-600 active:bg-brand-700 text-white font-bold text-xs shadow-xs">
+        <svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+        </svg>
+        <span>কল করুন</span>
+      </a>
+
+      <a href="https://wa.me/8801712490208?text=%E0%A6%86%E0%A6%B8%E0%A6%B8%E0%A6%BE%E0%A6%BA%E0%A6%BE%E0%A6%AE%E0%A7%81%20%E0%A6%86%E0%A6%B2%E0%A6%BE%E0%A6%87%E0%A6%95%E0%A7%81%E0%A6%AE%2C%20%E0%A6%B8%E0%A7%8D%E0%A6%AC%E0%A6%AA%E0%A7%8D%E0%A6%A8%20%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%80%20%E0%A6%A8%E0%A6%BF%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AF%E0%A6%BC%20%E0%A6%95%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%A6%E0%A7%8D%E0%A6%B0%E0%A7%87%E0%A6%B0%20%E0%A6%B8%E0%A7%87%E0%A6%AC%E0%A6%BE%20%E0%A6%B8%E0%A6%AE%E0%A7%8D%E0%A6%AA%E0%A6%B0%E0%A7%8D%E0%A6%95%E0%A7%87%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87%E0%A7%84" target="_blank" rel="noopener noreferrer" class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-emerald-800 active:bg-emerald-900 text-white font-bold text-xs shadow-xs">
+        <svg class="w-4 h-4 mb-0.5 fill-current text-emerald-300" viewBox="0 0 24 24">
+          <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.312.045-.694.072-2.115-.515-1.748-.72-2.883-2.483-2.97-2.6-.088-.116-.708-.941-.708-1.794 0-.852.447-1.272.607-1.444.159-.172.348-.216.463-.216.116 0 .232.001.333.006.107.005.25.04.391.381.144.348.491 1.2.535 1.288.043.088.072.19.014.305-.058.115-.087.188-.173.289-.087.101-.183.226-.262.304-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.174.086.276.072.376-.043.101-.116.433-.506.549-.68.116-.173.231-.144.39-.086s1.011.477 1.185.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+        </svg>
+        <span>হোয়াটসঅ্যাপ</span>
+      </a>
+
+      <a href="#contact" class="flex flex-col items-center justify-center py-2 px-2 rounded-xl bg-slate-900 active:bg-black text-white font-bold text-xs shadow-xs">
+        <svg class="w-4 h-4 mb-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+        </svg>
+        <span>যোগাযোগ</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==================== EMBEDDED JAVASCRIPT LOGIC ==================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      
+      // 1. Scroll-triggered Reveal Animations
+      const reveals = document.querySelectorAll('.reveal');
+      const revealObserver = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -40px 0px'
+      });
+
+      reveals.forEach(function(el) {
+        revealObserver.observe(el);
+      });
+
+      // 2. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const hamburgerIcon = document.getElementById('hamburgerIcon');
+      const closeIcon = document.getElementById('closeIcon');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      function toggleMobileMenu() {
+        const isClosed = mobileMenu.classList.contains('hidden');
+        if (isClosed) {
+          mobileMenu.classList.remove('hidden');
+          hamburgerIcon.classList.add('hidden');
+          closeIcon.classList.remove('hidden');
+        } else {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        }
+      }
+
+      if (mobileMenuBtn) {
+        mobileMenuBtn.addEventListener('click', toggleMobileMenu);
+      }
+
+      mobileNavLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+          mobileMenu.classList.add('hidden');
+          hamburgerIcon.classList.remove('hidden');
+          closeIcon.classList.add('hidden');
+        });
+      });
+
+      // 3. FAQ Accordion Interaction
+      const faqButtons = document.querySelectorAll('.faq-btn');
+      faqButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+          const answer = this.nextElementSibling;
+          const chevron = this.querySelector('.faq-chevron');
+          const isCurrentlyOpen = answer.classList.contains('open');
+
+          // Close all other accordions for a polished feel
+          faqButtons.forEach(function (btn) {
+            btn.setAttribute('aria-expanded', 'false');
+            const otherAnswer = btn.nextElementSibling;
+            const otherChevron = btn.querySelector('.faq-chevron');
+            if (otherAnswer) otherAnswer.classList.remove('open');
+            if (otherChevron) otherChevron.classList.remove('open');
+          });
+
+          if (!isCurrentlyOpen) {
+            this.setAttribute('aria-expanded', 'true');
+            answer.classList.add('open');
+            chevron.classList.add('open');
+          }
+        });
+      });
+
+      // 4. Gallery Lightbox Modal
+      const galleryItems = document.querySelectorAll('.gallery-item');
+      const lightbox = document.getElementById('galleryLightbox');
+      const lightboxImg = document.getElementById('lightboxImg');
+      const lightboxCaption = document.getElementById('lightboxCaption');
+      const closeLightbox = document.getElementById('closeLightbox');
+
+      galleryItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          const fullImgUrl = this.getAttribute('data-img');
+          const caption = this.getAttribute('data-caption');
+          lightboxImg.src = fullImgUrl;
+          lightboxCaption.textContent = caption || '';
+          lightbox.classList.remove('hidden-modal');
+          lightbox.classList.add('active-modal');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+
+      function dismissLightbox() {
+        lightbox.classList.add('hidden-modal');
+        lightbox.classList.remove('active-modal');
+        document.body.style.overflow = '';
+      }
+
+      if (closeLightbox) {
+        closeLightbox.addEventListener('click', dismissLightbox);
+      }
+
+      if (lightbox) {
+        lightbox.addEventListener('click', function (e) {
+          if (e.target === lightbox) {
+            dismissLightbox();
+          }
+        });
+      }
+
+      document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && lightbox.classList.contains('active-modal')) {
+          dismissLightbox();
+        }
+      });
+
+      // 5. Contact Form Submission Handling
+      const contactForm = document.getElementById('contactForm');
+      const successMsg = document.getElementById('contactSuccessMsg');
+      const submitBtn = document.getElementById('submitBtn');
+
+      if (contactForm) {
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          
+          submitBtn.disabled = true;
+          submitBtn.innerHTML = '<span>বার্তা পাঠানো হচ্ছে...</span>';
+
+          setTimeout(function () {
+            successMsg.classList.remove('hidden');
+            contactForm.reset();
+            submitBtn.disabled = false;
+            submitBtn.innerHTML = '<span>বার্তা পাঠান</span><svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>';
+            
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+          }, 500);
+        });
+      }
+
+      // 6. Anti-Drug & Hope Recovery Animated Backdrop Canvas
+      const canvas = document.getElementById('antiDrugCanvas');
+      const toggleAnimBtn = document.getElementById('toggleAnimationBtn');
+      const animStatusText = document.getElementById('animStatusText');
+      const animPingDot = document.getElementById('animPingDot');
+      const animSolidDot = document.getElementById('animSolidDot');
+
+      if (canvas) {
+        const ctx = canvas.getContext('2d');
+        let width = 0;
+        let height = 0;
+        let animationFrameId = null;
+        let isRunning = true;
+
+        function resizeCanvas() {
+          const heroSection = canvas.parentElement;
+          if (!heroSection) return;
+          width = canvas.width = heroSection.clientWidth;
+          height = canvas.height = heroSection.clientHeight;
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Particles representing:
+        // 1. Dissolving dark toxins (small grayish/dark-amber points fading out)
+        // 2. Emerging emerald & teal vitality sparks (soaring up towards health and new life)
+        // 3. Subtle connective lines of social & psychological support
+        const particleCount = 38;
+        const particles = [];
+
+        class RecoveryParticle {
+          constructor() {
+            this.reset(true);
+          }
+
+          reset(randomY) {
+            this.x = Math.random() * width;
+            this.y = randomY ? Math.random() * height : height + 10;
+            // Upward drift towards light and recovery
+            this.vx = (Math.random() - 0.5) * 0.7;
+            this.vy = -(Math.random() * 0.8 + 0.3);
+            this.radius = Math.random() * 3 + 1.5;
+            // 75% emerald/teal (healing/hope), 25% golden amber (warmth)
+            const isHope = Math.random() > 0.25;
+            if (isHope) {
+              this.color = Math.random() > 0.5 ? 'rgba(5, 150, 105,' : 'rgba(13, 148, 136,';
+            } else {
+              this.color = 'rgba(217, 119, 6,';
+            }
+            this.baseAlpha = Math.random() * 0.35 + 0.15;
+            this.pulseSpeed = Math.random() * 0.03 + 0.01;
+            this.pulseVal = Math.random() * Math.PI;
+          }
+
+          update() {
+            this.x += this.vx;
+            this.y += this.vy;
+            this.pulseVal += this.pulseSpeed;
+
+            // Soft wrap around
+            if (this.y < -15 || this.x < -20 || this.x > width + 20) {
+              this.reset(false);
+            }
+          }
+
+          draw() {
+            const currentAlpha = Math.max(0.08, this.baseAlpha + Math.sin(this.pulseVal) * 0.12);
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+            ctx.fillStyle = this.color + currentAlpha + ')';
+            ctx.fill();
+
+            // Subtle halo
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, this.radius * 2.2, 0, Math.PI * 2);
+            ctx.fillStyle = this.color + (currentAlpha * 0.25) + ')';
+            ctx.fill();
+          }
+        }
+
+        // Initialize particles
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new RecoveryParticle());
+        }
+
+        // Therapeutic Connecting Constellation Lines
+        function drawConstellations() {
+          const maxDist = 110;
+          for (let i = 0; i < particles.length; i++) {
+            for (let j = i + 1; j < particles.length; j++) {
+              const dx = particles[i].x - particles[j].x;
+              const dy = particles[i].y - particles[j].y;
+              const dist = Math.sqrt(dx * dx + dy * dy);
+              if (dist < maxDist) {
+                const lineAlpha = (1 - dist / maxDist) * 0.14;
+                ctx.beginPath();
+                ctx.moveTo(particles[i].x, particles[i].y);
+                ctx.lineTo(particles[j].x, particles[j].y);
+                ctx.strokeStyle = `rgba(16, 185, 129, ${lineAlpha})`;
+                ctx.lineWidth = 1;
+                ctx.stroke();
+              }
+            }
+          }
+        }
+
+        function animate() {
+          if (!isRunning) return;
+
+          ctx.clearRect(0, 0, width, height);
+
+          // Subtle ambient recovery gradient glow
+          const grad = ctx.createRadialGradient(
+            width * 0.5, height * 0.4, 10,
+            width * 0.5, height * 0.4, Math.max(width, height) * 0.6
+          );
+          grad.addColorStop(0, 'rgba(236, 253, 245, 0.45)');
+          grad.addColorStop(0.6, 'rgba(240, 253, 250, 0.25)');
+          grad.addColorStop(1, 'rgba(255, 255, 255, 0)');
+          ctx.fillStyle = grad;
+          ctx.fillRect(0, 0, width, height);
+
+          drawConstellations();
+
+          particles.forEach(function (p) {
+            p.update();
+            p.draw();
+          });
+
+          animationFrameId = requestAnimationFrame(animate);
+        }
+
+        // Start animation loop
+        animate();
+
+        // Animation Pause/Resume Controller
+        if (toggleAnimBtn) {
+          toggleAnimBtn.addEventListener('click', function () {
+            if (isRunning) {
+              isRunning = false;
+              if (animationFrameId) cancelAnimationFrame(animationFrameId);
+              toggleAnimBtn.textContent = 'চালান';
+              toggleAnimBtn.classList.replace('bg-emerald-50', 'bg-amber-50');
+              toggleAnimBtn.classList.replace('text-emerald-800', 'text-amber-800');
+              toggleAnimBtn.classList.replace('border-emerald-200', 'border-amber-200');
+              if (animStatusText) animStatusText.textContent = 'অ্যানিমেশন স্থগিত';
+              if (animPingDot) animPingDot.classList.add('hidden');
+              if (animSolidDot) {
+                animSolidDot.classList.remove('bg-emerald-600');
+                animSolidDot.classList.add('bg-slate-400');
+              }
+            } else {
+              isRunning = true;
+              animate();
+              toggleAnimBtn.textContent = 'পজ';
+              toggleAnimBtn.classList.replace('bg-amber-50', 'bg-emerald-50');
+              toggleAnimBtn.classList.replace('text-amber-800', 'text-emerald-800');
+              toggleAnimBtn.classList.replace('border-amber-200', 'border-emerald-200');
+              if (animStatusText) animStatusText.textContent = 'মাদক সচেতনতা ও আরোগ্য অ্যানিমেশন সক্রিয়';
+              if (animPingDot) animPingDot.classList.remove('hidden');
+              if (animSolidDot) {
+                animSolidDot.classList.remove('bg-slate-400');
+                animSolidDot.classList.add('bg-emerald-600');
+              }
+            }
+          });
+        }
+      }
+
+      // 7. Interactive Symptom & Addiction Severity Assessment Tool
+      const symptomPills = document.querySelectorAll('#symptomCheckGroup .custom-check-pill');
+      const assessmentBadge = document.getElementById('assessmentBadge');
+      const assessmentSeverity = document.getElementById('assessmentSeverity');
+      const assessmentAdviceText = document.getElementById('assessmentAdviceText');
+      const assessmentResultCard = document.getElementById('assessmentResultCard');
+
+      if (symptomPills.length > 0 && assessmentBadge && assessmentSeverity && assessmentAdviceText && assessmentResultCard) {
+        const banglaDigits = ['০', '১', '২', '৩', '৪', '৫', '৬'];
+
+        symptomPills.forEach(function (pill) {
+          pill.addEventListener('click', function () {
+            this.classList.toggle('selected');
+            updateAssessmentResult();
+          });
+        });
+
+        function updateAssessmentResult() {
+          const selectedCount = document.querySelectorAll('#symptomCheckGroup .custom-check-pill.selected').length;
+          const countBangla = banglaDigits[selectedCount] || selectedCount;
+
+          if (selectedCount === 0) {
+            assessmentBadge.className = 'px-2.5 py-0.5 rounded-md text-xs font-bold bg-slate-100 text-slate-700';
+            assessmentBadge.textContent = 'লক্ষণ নির্বাচিত হয়নি (০টি)';
+            assessmentSeverity.textContent = 'উপরে লক্ষণগুলোতে ক্লিক করে পরীক্ষা করুন';
+            assessmentAdviceText.textContent = 'আপনার প্রিয়জনের আচরণের সাথে ওপরের লক্ষণগুলো মিলিয়ে দেখুন। সঠিক সময়ে সঠিক সিদ্ধান্ত একটি জীবন বাঁচাতে পারে।';
+            assessmentResultCard.className = 'mt-6 p-5 rounded-2xl bg-white border border-emerald-200 max-w-3xl mx-auto shadow-xs text-center sm:text-left transition-all';
+          } else if (selectedCount === 1) {
+            assessmentBadge.className = 'px-2.5 py-0.5 rounded-md text-xs font-bold bg-amber-100 text-amber-900 border border-amber-300';
+            assessmentBadge.textContent = `প্রাথমিক লক্ষণ শনাক্ত (${countBangla}টি)`;
+            assessmentSeverity.textContent = 'হালকা লক্ষণ — গভীর পর্যবেক্ষণ প্রয়োজন';
+            assessmentAdviceText.textContent = 'রোগীকে খোলামেলাভাবে সহমর্মিতার সাথে কথা বলুন এবং বন্ধুত্বপূর্ণ আচরণ করুন। প্রয়োজনে আমাদের সাথে ফোনে প্রাথমিক ধারণা নিতে পারেন।';
+            assessmentResultCard.className = 'mt-6 p-5 rounded-2xl bg-amber-50/50 border border-amber-300 max-w-3xl mx-auto shadow-xs text-center sm:text-left transition-all';
+          } else if (selectedCount === 2) {
+            assessmentBadge.className = 'px-2.5 py-0.5 rounded-md text-xs font-bold bg-orange-100 text-orange-950 border border-orange-400';
+            assessmentBadge.textContent = `মাঝারি সতর্কতা (${countBangla}টি লক্ষণ)`;
+            assessmentSeverity.textContent = 'সতর্কতা জরুরি — বিশেষজ্ঞ পরামর্শ প্রয়োজন';
+            assessmentAdviceText.textContent = 'লক্ষণগুলো নিয়মিত প্রকাশ পেলে কালবিলম্ব না করে বিশেষজ্ঞের পরামর্শ নেওয়া উচিত। প্রয়োজনে এখনই আমাদের অভিজ্ঞ চিকিৎসকের সাথে কথা বলুন।';
+            assessmentResultCard.className = 'mt-6 p-5 rounded-2xl bg-orange-50/60 border border-orange-400 max-w-3xl mx-auto shadow-xs text-center sm:text-left transition-all';
+          } else {
+            assessmentBadge.className = 'px-2.5 py-0.5 rounded-md text-xs font-bold bg-rose-600 text-white animate-pulse';
+            assessmentBadge.textContent = `উচ্চ ঝুঁকি শনাক্ত (${countBangla}টি লক্ষণ)`;
+            assessmentSeverity.textContent = '🚨 জরুরি চিকিৎসা প্রয়োজন!';
+            assessmentAdviceText.textContent = 'আপনার প্রিয়জন গুরুতর আসক্তির ঝুঁকিতে রয়েছেন। ঘরে আটকে রেখে বা দেরি না করে অতি দ্রুত কেন্দ্রে নিয়ে এসে পেশাদার চিকিৎসা শুরু করা আবশ্যক।';
+            assessmentResultCard.className = 'mt-6 p-5 rounded-2xl bg-rose-50 border-2 border-rose-400 max-w-3xl mx-auto shadow-md text-center sm:text-left transition-all';
+          }
+        }
+      }
+
+      // 8. Scroll-To-Top Circular Progress Indicator
+      const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+      const progressCircle = document.getElementById('scrollProgressCircle');
+
+      if (scrollToTopBtn && progressCircle) {
+        const circumference = 2 * Math.PI * 19; // ~119.38
+
+        window.addEventListener('scroll', function () {
+          const scrollTop = window.scrollY || document.documentElement.scrollTop;
+          const scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          const scrollFraction = scrollHeight > 0 ? (scrollTop / scrollHeight) : 0;
+          const drawOffset = circumference - (scrollFraction * circumference);
+
+          progressCircle.style.strokeDashoffset = Math.max(0, drawOffset);
+
+          if (scrollTop > 350) {
+            scrollToTopBtn.classList.add('visible');
+          } else {
+            scrollToTopBtn.classList.remove('visible');
+          }
+        }, { passive: true });
+
+        scrollToTopBtn.addEventListener('click', function () {
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        });
+      }
+
+    });
+  </script>
+</body>
+</html>
